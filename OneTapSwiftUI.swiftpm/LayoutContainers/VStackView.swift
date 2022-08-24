@@ -18,12 +18,19 @@ fileprivate enum AlignmentType: String,CaseIterable,Identifiable{
     }
 }
 
+
 struct VStackView: View {
-    @State private var alignment : AlignmentType = .center
+    @State private var alignment: AlignmentType = .center
+    @State var spacing = DoubleOption(name: "spacing", value: 8, defaultValue: 8, range: -10...50)
+    
     @State private var selectedPreview: PreviewType = .preview
     
+    var spacingString:String{
+        return spacing.active ? ", spacing:\(spacing.valueString)" : ""
+    }
+    
     var code: String{ return """
-VStack(alignment: \(alignment.rawValue)){
+VStack(alignment: \(alignment.rawValue)\(spacingString)) {
     RoundedRectangle(cornerRadius: 20)
         .fill(.purple)
         .frame(width: 50, height: 40)
@@ -53,7 +60,10 @@ VStack(alignment: \(alignment.rawValue)){
             case .preview:
                 HStack{
                     Spacer()
-                    VStack(alignment: alignment.caseValue){
+                    VStack(
+                        alignment: alignment.caseValue, 
+                        spacing: spacing.active ? spacing.value : nil
+                    ){
                         RoundedRectangle(cornerRadius: 20)
                             .fill(.purple)
                             .frame(width: 50, height: 40)
@@ -68,7 +78,7 @@ VStack(alignment: \(alignment.rawValue)){
                 }
             case .code:
                 Text(code)
-                    .font(.body)
+                    .textSelection(.enabled)
             }
             
             HStack{
@@ -81,8 +91,8 @@ VStack(alignment: \(alignment.rawValue)){
                         }
                     }.buttonStyle(.borderedProminent)
                 }
-                
             }
+            DoubleOptionView(option: $spacing)
         }
         .padding()
     }
