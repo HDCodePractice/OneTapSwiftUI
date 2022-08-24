@@ -4,8 +4,7 @@ struct ContentView: View {
     var body: some View {
         NavigationView{
             Sidebar()
-            Text("Hello world")
-            Text("Hello world")
+            VStackControlView()
         }
         .navigationViewStyle(.columns)
         .navigationTitle("")
@@ -14,9 +13,9 @@ struct ContentView: View {
 }
 
 
-extension UISplitViewController {
-    open override func viewDidLoad() {
-        super.viewDidLoad()
-        self.show(.primary)        
-    }
-}
+//extension UISplitViewController {
+//    open override func viewDidLoad() {
+//        super.viewDidLoad()
+//        self.show(.primary)        
+//    }
+//}

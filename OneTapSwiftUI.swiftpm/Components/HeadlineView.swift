@@ -1,6 +1,6 @@
 import SwiftUI
 
-struct ControlTitle: View {
+struct HeadlineView: View {
     var title: String
     var url: String
     var description: String
@@ -20,8 +20,8 @@ struct ControlTitle: View {
     }
 }
 
-struct ControlTitle_Previews: PreviewProvider {
+struct HeadlineView_Previews: PreviewProvider {
     static var previews: some View {
-        ControlTitle(title: "VStack", url: "https://developer.apple.com/documentation/swiftui/vstack", description: "A view that arranges its subviews in a vertical line.")
+        HeadlineView(title: "VStack", url: "https://developer.apple.com/documentation/swiftui/vstack", description: "A view that arranges its subviews in a vertical line.")
     }
 }
