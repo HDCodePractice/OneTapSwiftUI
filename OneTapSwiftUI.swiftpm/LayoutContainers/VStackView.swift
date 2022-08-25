@@ -1,6 +1,6 @@
 import SwiftUI
 
-fileprivate enum AlignmentType: String,CaseIterable,Identifiable{
+private enum AlignmentType: String,CaseIterable,Identifiable{
     case center = ".center"
     case leading = ".leading"
     case trailing = ".trailing"
@@ -22,8 +22,6 @@ fileprivate enum AlignmentType: String,CaseIterable,Identifiable{
 struct VStackView: View {
     @State private var alignment: AlignmentType = .center
     @State var spacing = DoubleOption(name: "spacing", value: 8, defaultValue: 8, range: -10...50)
-    
-    @State private var selectedPreview: PreviewType = .preview
     
     var spacingString:String{
         return spacing.active ? ", spacing:\(spacing.valueString)" : ""
@@ -49,6 +47,7 @@ VStack(alignment: \(alignment.rawValue)\(spacingString)) {
             VStack(alignment: .leading){
                 VStack(spacing: 40){
                     CodePreviewView(code: code)
+                    
                     HStack{
                         Spacer()
                         VStack(
@@ -68,23 +67,23 @@ VStack(alignment: \(alignment.rawValue)\(spacingString)) {
                         Spacer()
                     }
                     
+                    
                     VStack(alignment: .leading){
                         HStack{
                             Text("alignment:")
                                 .bold()
-                            ForEach(AlignmentType.allCases){ alignmentType in
-                                Button(alignmentType.rawValue){
-                                    withAnimation { 
-                                        alignment = alignmentType
-                                    }
-                                }.buttonStyle(.borderedProminent)
+                            Picker("", selection: $alignment.animation()){
+                                ForEach(AlignmentType.allCases){ alignmentType in
+                                    Text(alignmentType.rawValue)
+                                }
                             }
+                            .pickerStyle(.segmented)
                         }
                         DoubleOptionView(option: $spacing)
                     }
                 }
             }
-        .padding()
+            .padding()
         }
     }
 }
