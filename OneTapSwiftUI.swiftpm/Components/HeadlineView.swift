@@ -7,9 +7,9 @@ struct HeadlineView: View {
     var body: some View {
         VStack(alignment: .leading, spacing: 20){
             HStack{
-                Text("VStack")
+                Text(title)
                     .font(.largeTitle)
-                Link(destination: URL(string: "https://developer.apple.com/documentation/swiftui/vstack")!) { 
+                Link(destination: URL(string: url)!) { 
                     Image(systemName: "link")
                 }
                 Spacer()
