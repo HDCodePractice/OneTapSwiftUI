@@ -77,8 +77,7 @@ VStack(alignment: \(alignment.rawValue)\(spacingString)) {
                     Spacer()
                 }
             case .code:
-                Text(code)
-                    .textSelection(.enabled)
+                CodePreviewView(code: code)
             }
             
             HStack{
