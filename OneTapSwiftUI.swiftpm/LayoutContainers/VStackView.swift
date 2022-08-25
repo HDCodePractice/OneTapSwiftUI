@@ -45,55 +45,47 @@ VStack(alignment: \(alignment.rawValue)\(spacingString)) {
     }
     
     var body: some View {
-        VStack(alignment: .leading){
-            HStack{
-                Picker("",selection: $selectedPreview){
-                    ForEach(PreviewType.allCases){ previewType in
-                        Text(previewType.rawValue)
-                    }
-                }
-                .pickerStyle(.segmented)
-                .padding()
-            }
-            
-            switch selectedPreview{
-            case .preview:
-                HStack{
-                    Spacer()
-                    VStack(
-                        alignment: alignment.caseValue, 
-                        spacing: spacing.active ? spacing.value : nil
-                    ){
-                        RoundedRectangle(cornerRadius: 20)
-                            .fill(.purple)
-                            .frame(width: 50, height: 40)
-                        RoundedRectangle(cornerRadius: 20)
-                            .fill(.mint)
-                            .frame(width: 200, height: 40)
-                        RoundedRectangle(cornerRadius: 20)
-                            .fill(.blue)
-                            .frame(width: 90, height: 40)
-                    }
-                    Spacer()
-                }
-            case .code:
-                CodePreviewView(code: code)
-            }
-            
-            HStack{
-                Text("alignment:")
-                    .bold()
-                ForEach(AlignmentType.allCases){ alignmentType in
-                    Button(alignmentType.rawValue){
-                        withAnimation { 
-                            alignment = alignmentType
+        ScrollView{
+            VStack(alignment: .leading){
+                VStack(spacing: 40){
+                    CodePreviewView(code: code)
+                    HStack{
+                        Spacer()
+                        VStack(
+                            alignment: alignment.caseValue, 
+                            spacing: spacing.active ? spacing.value : nil
+                        ){
+                            RoundedRectangle(cornerRadius: 20)
+                                .fill(.purple)
+                                .frame(width: 50, height: 40)
+                            RoundedRectangle(cornerRadius: 20)
+                                .fill(.mint)
+                                .frame(width: 200, height: 40)
+                            RoundedRectangle(cornerRadius: 20)
+                                .fill(.blue)
+                                .frame(width: 90, height: 40)
                         }
-                    }.buttonStyle(.borderedProminent)
+                        Spacer()
+                    }
+                    
+                    VStack(alignment: .leading){
+                        HStack{
+                            Text("alignment:")
+                                .bold()
+                            ForEach(AlignmentType.allCases){ alignmentType in
+                                Button(alignmentType.rawValue){
+                                    withAnimation { 
+                                        alignment = alignmentType
+                                    }
+                                }.buttonStyle(.borderedProminent)
+                            }
+                        }
+                        DoubleOptionView(option: $spacing)
+                    }
                 }
             }
-            DoubleOptionView(option: $spacing)
-        }
         .padding()
+        }
     }
 }
 
