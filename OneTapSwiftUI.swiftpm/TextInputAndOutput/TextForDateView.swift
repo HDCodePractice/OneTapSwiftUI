@@ -27,6 +27,9 @@ private enum DateStyleType: String,CaseIterable,Identifiable{
 
 struct TextForDateView: View {
     @State var now = Date()
+    let yesterday = Calendar.current.date(byAdding: .day, value: -1, to: Date())!
+    let tomorrow = Calendar.current.date(byAdding: .day, value: 1, to: Date())!
+    let oneHourAgo = Calendar.current.date(byAdding: .hour, value: -1, to: Date())!
     
     var codeString: String{
         var rCodeString = ""
@@ -38,21 +41,32 @@ struct TextForDateView: View {
     
     var code: String{ return """
 @State var now = Date()
+let yesterday = Calendar.current.date(byAdding: .day, value: -1, to: Date())!
+let tomorrow = Calendar.current.date(byAdding: .day, value: 1, to: Date())!
+let oneHourAgo = Calendar.current.date(byAdding: .hour, value: -1, to: Date())!
 
 var body: some View {
     VStack(alignment: .leading){
-\(codeString)    }
+\(codeString)        Text("yesterday to tomorrow: ") + Text(yesterday...tomorrow)
+        Text("one hour to now: ") + Text(oneHourAgo...now)
+        Text("one hour to now: ") + Text(DateInterval(start: oneHourAgo, end: now))
+    }
 }
 """
     }
     
     var body: some View {
         VStack{
+            Text("Creating a text view for a date")
+                .font(.title2)
             CodePreviewView(code: code)
             VStack(alignment: .leading){
                 ForEach(DateStyleType.allCases){ dateStyleType in
                     Text("\(dateStyleType.rawValue): ").bold() + Text(now, style: dateStyleType.caseValue)
                 }
+                Text("yesterday to tomorrow: ") + Text(yesterday...tomorrow)
+                Text("one hour to now: ") + Text(oneHourAgo...now)
+                Text("one hour to now: ") + Text(DateInterval(start: oneHourAgo, end: now))
             }
             Button("Reset"){
                 now = Date()
