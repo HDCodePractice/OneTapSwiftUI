@@ -10,6 +10,8 @@ struct TextControlView: View {
                     description: "A view that displays one or more lines of read-only text."
                 )
                 TextForDateView()
+                Divider()
+                TextFormattingView()
                 Spacer()
             }
             .padding()
