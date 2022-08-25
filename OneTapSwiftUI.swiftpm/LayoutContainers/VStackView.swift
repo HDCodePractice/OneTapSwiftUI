@@ -43,48 +43,46 @@ VStack(alignment: \(alignment.rawValue)\(spacingString)) {
     }
     
     var body: some View {
-        ScrollView{
-            VStack(alignment: .leading){
-                VStack(spacing: 40){
-                    CodePreviewView(code: code)
-                    
+        VStack(alignment: .leading){
+            VStack(spacing: 40){
+                CodePreviewView(code: code)
+                
+                HStack{
+                    Spacer()
+                    VStack(
+                        alignment: alignment.caseValue, 
+                        spacing: spacing.active ? spacing.value : nil
+                    ){
+                        RoundedRectangle(cornerRadius: 20)
+                            .fill(.purple)
+                            .frame(width: 50, height: 40)
+                        RoundedRectangle(cornerRadius: 20)
+                            .fill(.mint)
+                            .frame(width: 200, height: 40)
+                        RoundedRectangle(cornerRadius: 20)
+                            .fill(.blue)
+                            .frame(width: 90, height: 40)
+                    }
+                    Spacer()
+                }
+                
+                
+                VStack(alignment: .leading){
                     HStack{
-                        Spacer()
-                        VStack(
-                            alignment: alignment.caseValue, 
-                            spacing: spacing.active ? spacing.value : nil
-                        ){
-                            RoundedRectangle(cornerRadius: 20)
-                                .fill(.purple)
-                                .frame(width: 50, height: 40)
-                            RoundedRectangle(cornerRadius: 20)
-                                .fill(.mint)
-                                .frame(width: 200, height: 40)
-                            RoundedRectangle(cornerRadius: 20)
-                                .fill(.blue)
-                                .frame(width: 90, height: 40)
-                        }
-                        Spacer()
-                    }
-                    
-                    
-                    VStack(alignment: .leading){
-                        HStack{
-                            Text("alignment:")
-                                .bold()
-                            Picker("", selection: $alignment.animation()){
-                                ForEach(AlignmentType.allCases){ alignmentType in
-                                    Text(alignmentType.rawValue)
-                                }
+                        Text("alignment:")
+                            .bold()
+                        Picker("", selection: $alignment.animation()){
+                            ForEach(AlignmentType.allCases){ alignmentType in
+                                Text(alignmentType.rawValue)
                             }
-                            .pickerStyle(.segmented)
                         }
-                        DoubleOptionView(option: $spacing)
+                        .pickerStyle(.segmented)
                     }
+                    DoubleOptionView(option: $spacing)
                 }
             }
-            .padding()
         }
+        .padding()
     }
 }
 
