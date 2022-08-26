@@ -12,8 +12,8 @@ struct VStackControlView: View {
                 VStackView()
                 Spacer()
             }
-            .padding()
         }
+        .padding()
     }
 }
 
