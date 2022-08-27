@@ -9,6 +9,12 @@ struct Sidebar: View {
                 }
             }
             
+            Section("Controls and indicators"){
+                NavigationLink("Menu"){
+                    
+                }
+            }
+            
             Section("Layout containers"){
                 NavigationLink("VStack"){
                     VStackControlView()
