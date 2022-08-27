@@ -60,7 +60,6 @@ RoundedRectangle(cornerRadius: 20)
                     CodePreviewView(code: code)
                     
                     HStack{
-                        
                         ZStack(alignment: alignment.caseValue){
                             RoundedRectangle(cornerRadius: 20)
                                 .fill(.mint)
@@ -69,7 +68,6 @@ RoundedRectangle(cornerRadius: 20)
                                 .fill(.purple)
                                 .frame(width: 50, height: 40)
                         }
-                        
                     }
                     
                     VStack(alignment: .leading){
