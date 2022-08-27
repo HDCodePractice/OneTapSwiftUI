@@ -14,8 +14,8 @@ struct TextControlView: View {
                 TextFormattingView()
                 Spacer()
             }
-            .padding()
         }
+        .padding()
     }
 }
 

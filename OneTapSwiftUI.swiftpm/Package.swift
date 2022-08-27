@@ -16,9 +16,11 @@ let package = Package(
         .iOSApplication(
             name: "One Tap SwiftUI",
             targets: ["AppModule"],
+            bundleIdentifier: "one.hdcola.onetapswiftui",
+            teamIdentifier: "T4W3MN6QHA",
             displayVersion: "1.0",
             bundleVersion: "1",
-            appIcon: .placeholder(icon: .tv),
+            appIcon: .asset("AppIcon"),
             accentColor: .presetColor(.indigo),
             supportedDeviceFamilies: [
                 .pad,
@@ -30,7 +32,7 @@ let package = Package(
                 .landscapeLeft,
                 .portraitUpsideDown(.when(deviceFamilies: [.pad]))
             ],
-            appCategory: .education
+            appCategory: .developerTools
         )
     ],
     targets: [
