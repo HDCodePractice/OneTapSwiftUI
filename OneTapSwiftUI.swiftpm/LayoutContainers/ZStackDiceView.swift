@@ -116,8 +116,8 @@ struct Dice: View {
     }
 }
 
-//struct ZStackDiceView_Previews: PreviewProvider {
-//    static var previews: some View {
-//        ZStackDiceView()
-//    }
-//}
+struct ZStackDiceView_Previews: PreviewProvider {
+    static var previews: some View {
+        ZStackDiceView()
+    }
+}

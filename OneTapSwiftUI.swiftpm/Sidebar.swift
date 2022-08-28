@@ -20,9 +20,7 @@ struct Sidebar: View {
                     VStackControlView()
                 }
                 NavigationLink("ZStack"){
-                    ScrollView{
-                    ZStackDiceView()
-                    }
+                    ZStackControlView()
                 }
             }
         }.listStyle(.insetGrouped)

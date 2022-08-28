@@ -1,8 +1,6 @@
 import SwiftUI
 
 struct ZStackControlView: View {
-    //    @State var alignment : HorizontalAlignment = .center
-    
     var body: some View {
         ScrollView{
             VStack{
@@ -12,7 +10,9 @@ struct ZStackControlView: View {
                     description: "A view that overlays its subviews, aligning them in both axes."
                 )
                 ZStackShapeView()
-                Spacer()
+                Divider()
+                ZStackDiceView()
+                Divider()
             }
             .padding()
         }

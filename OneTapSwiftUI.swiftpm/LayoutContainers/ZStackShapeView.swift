@@ -46,9 +46,9 @@ ZStack(alignment: \(alignment.rawValue)){
 RoundedRectangle(cornerRadius: 20)
     .fill(.mint)
     .frame(width: 200, height: 200)
-RoundedRectangle(cornerRadius: 20)
+Circle()
     .fill(.purple)
-    .frame(width: 50, height: 40)
+    .frame(width: 50, height: 50)
 }
 """
     }
@@ -64,9 +64,9 @@ RoundedRectangle(cornerRadius: 20)
                             RoundedRectangle(cornerRadius: 20)
                                 .fill(.mint)
                                 .frame(width: 200, height: 200)
-                            RoundedRectangle(cornerRadius: 20)
+                            Circle()
                                 .fill(.purple)
-                                .frame(width: 50, height: 40)
+                                .frame(width: 50, height: 50)
                         }
                     }
                     
@@ -86,12 +86,6 @@ RoundedRectangle(cornerRadius: 20)
                 }.padding()
                 
             }
-        }
-    }
-    
-    struct ZStackShapeView_Previews: PreviewProvider {
-        static var previews: some View {
-            ZStackShapeView()
         }
     }
 }

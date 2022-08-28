@@ -11,17 +11,18 @@ struct MenuControlView: View {
                 )
                 MenuViewCode()
                 MenuView()
+                Divider()
             }
         }
         .padding()
     }
 }
 
-//struct MenuControlView_Previews: PreviewProvider {
-//    static var previews: some View {
-//        MenuControlView()
-//    }
-//}
+struct MenuControlView_Previews: PreviewProvider {
+    static var previews: some View {
+        MenuControlView()
+    }
+}
 
 private struct MenuViewCode: View {
     var code : String{
