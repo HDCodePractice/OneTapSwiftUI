@@ -19,6 +19,9 @@ struct Sidebar: View {
                 NavigationLink("VStack"){
                     VStackControlView()
                 }
+                NavigationLink("ZStack"){
+                    ZStackControlView()
+                }
             }
         }.listStyle(.insetGrouped)
     }

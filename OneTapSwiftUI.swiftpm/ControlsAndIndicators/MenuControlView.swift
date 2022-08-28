@@ -11,6 +11,7 @@ struct MenuControlView: View {
                 )
                 MenuViewCode()
                 MenuView()
+                Divider()
             }
         }
         .padding()
@@ -23,7 +24,7 @@ struct MenuControlView_Previews: PreviewProvider {
     }
 }
 
-struct MenuViewCode: View {
+private struct MenuViewCode: View {
     var code : String{
         return """
 @State var selected = "no selected"
@@ -31,6 +32,7 @@ var body: some View {
     Text("Selected: \\(selected)")
     Menu("Actions Menu") {
         Text("Text")
+        Image(systemName: "star")
         Button("Button"){ selected = "Button"}
         Divider()
         Menu("SubMenu") { 
@@ -54,6 +56,7 @@ private struct MenuView: View {
         Text("Selected: \(selected)")
         Menu("Actions Menu") {
             Text("Text")
+            Image(systemName: "star")
             Button("Button"){ selected = "Button"}
             Divider()
             Menu("SubMenu") { 

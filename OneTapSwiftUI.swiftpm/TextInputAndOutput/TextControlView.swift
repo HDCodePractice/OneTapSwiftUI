@@ -12,7 +12,7 @@ struct TextControlView: View {
                 TextForDateView()
                 Divider()
                 TextFormattingView()
-                Spacer()
+                Divider()
             }
         }
         .padding()
