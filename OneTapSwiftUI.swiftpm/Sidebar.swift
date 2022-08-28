@@ -19,6 +19,11 @@ struct Sidebar: View {
                 NavigationLink("VStack"){
                     VStackControlView()
                 }
+                NavigationLink("ZStack"){
+                    ScrollView{
+                    ZStackDiceView()
+                    }
+                }
             }
         }.listStyle(.insetGrouped)
     }

@@ -9,7 +9,7 @@ struct ZStackDiceView: View {
     }
 }
 
-struct DiceViewCode: View {
+private struct DiceViewCode: View {
     var code = """
 struct Dice: View {
     let diceAlignments: [[Alignment]] = [
@@ -116,8 +116,8 @@ struct Dice: View {
     }
 }
 
-struct ZStackDiceView_Previews: PreviewProvider {
-    static var previews: some View {
-        ZStackDiceView()
-    }
-}
+//struct ZStackDiceView_Previews: PreviewProvider {
+//    static var previews: some View {
+//        ZStackDiceView()
+//    }
+//}

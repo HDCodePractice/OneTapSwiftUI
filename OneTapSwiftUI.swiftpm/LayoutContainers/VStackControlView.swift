@@ -17,11 +17,11 @@ struct VStackControlView: View {
     }
 }
 
-struct VStackControlView_Previews: PreviewProvider {
-    static var previews: some View {
-        VStackControlView()
-    }
-}
+//struct VStackControlView_Previews: PreviewProvider {
+//    static var previews: some View {
+//        VStackControlView()
+//    }
+//}
 
 
 private enum AlignmentType: String,CaseIterable,Identifiable{
