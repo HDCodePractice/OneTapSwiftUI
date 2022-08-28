@@ -18,7 +18,8 @@ struct CodePreviewView: View {
     var body: some View {
         ZStack(alignment: .topTrailing) {
             Text("```\(code)```")
-                .padding(40)
+                .font(.footnote)
+                .padding(20)
                 .textSelection(.enabled)
                 .background(Color("codePreviewBackground"))
                 .clipShape(
