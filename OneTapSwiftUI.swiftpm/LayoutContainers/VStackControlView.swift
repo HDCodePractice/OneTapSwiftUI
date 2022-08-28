@@ -89,6 +89,7 @@ VStack(alignment: \(alignment.rawValue)\(spacingString)) {
                     }
                     Spacer()
                 }
+                .frame(height: 200)
                 
                 
                 VStack(alignment: .leading){
