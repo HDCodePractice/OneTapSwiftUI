@@ -43,49 +43,48 @@ struct ZStackShapeView: View {
     
     var code: String{ return """
 ZStack(alignment: \(alignment.rawValue)){
-RoundedRectangle(cornerRadius: 20)
-    .fill(.mint)
-    .frame(width: 200, height: 200)
-Circle()
-    .fill(.purple)
-    .frame(width: 50, height: 50)
+    RoundedRectangle(cornerRadius: 20)
+        .fill(.mint)
+        .frame(width: 200, height: 200)
+    Circle()
+        .fill(.purple)
+        .frame(width: 50, height: 50)
 }
 """
     }
     
     var body: some View {
-        ScrollView{
-            VStack(alignment: .leading){
-                VStack(spacing: 40){
-                    CodePreviewView(code: code)
-                    
-                    HStack{
-                        ZStack(alignment: alignment.caseValue){
-                            RoundedRectangle(cornerRadius: 20)
-                                .fill(.mint)
-                                .frame(width: 200, height: 200)
-                            Circle()
-                                .fill(.purple)
-                                .frame(width: 50, height: 50)
-                        }
+        VStack(spacing: 40){
+            CodePreviewView(code: code)
+            
+            HStack{
+                ZStack(alignment: alignment.caseValue){
+                    RoundedRectangle(cornerRadius: 20)
+                        .fill(.mint)
+                        .frame(width: 200, height: 200)
+                    Circle()
+                        .fill(.purple)
+                        .frame(width: 50, height: 50)
+                }
+            }
+            
+            HStack{
+                Text("alignment:")
+                    .bold()
+                Picker("alignment:", selection: $alignment.animation()){
+                    ForEach(AlignmentType.allCases){ alignmentType in
+                        Text(alignmentType.rawValue)
                     }
-                    
-                    VStack(alignment: .leading){
-                        HStack{
-                            Text("alignment:")
-                                .bold()
-                            Picker("", selection: $alignment.animation()){
-                                ForEach(AlignmentType.allCases){ alignmentType in
-                                    Text(alignmentType.rawValue)
-                                }
-                            }
-                            .pickerStyle(.wheel)
-                        }
-                    }
-                    
-                }.padding()
-                
+                }
+                .pickerStyle(.automatic)
             }
         }
+    }
+}
+
+
+struct ZStackShapeView_Previews: PreviewProvider {
+    static var previews: some View {
+        ZStackShapeView()
     }
 }
