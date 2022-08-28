@@ -43,12 +43,12 @@ struct ZStackShapeView: View {
     
     var code: String{ return """
 ZStack(alignment: \(alignment.rawValue)){
-RoundedRectangle(cornerRadius: 20)
-    .fill(.mint)
-    .frame(width: 200, height: 200)
-Circle()
-    .fill(.purple)
-    .frame(width: 50, height: 50)
+    RoundedRectangle(cornerRadius: 20)
+        .fill(.mint)
+        .frame(width: 200, height: 200)
+    Circle()
+        .fill(.purple)
+        .frame(width: 50, height: 50)
 }
 """
     }
