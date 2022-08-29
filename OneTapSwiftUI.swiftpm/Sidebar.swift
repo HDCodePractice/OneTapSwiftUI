@@ -23,6 +23,12 @@ struct Sidebar: View {
                     ZStackControlView()
                 }
             }
+            
+            Section("Animations"){
+                NavigationLink("withAnimation"){
+                    WithAnimationControlView()
+                }
+            }
         }.listStyle(.insetGrouped)
     }
 }

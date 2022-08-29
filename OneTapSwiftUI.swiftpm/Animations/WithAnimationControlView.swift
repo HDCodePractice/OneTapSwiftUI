@@ -21,6 +21,7 @@ private struct AnimationsView: View {
     @State var endSize = DoubleOption(name: "end size", value: 100, range: 50...200)
     @State var endDegress = DoubleOption(name: "end degress", value: 180, range: 0...720)
     @State var repeatCount = IntOption(name: "repeat count", value: 1, range: 0...5)
+    @State var autoreverses = BoolOption(name: "autoreverses", value: false)
     
     var code :String{ return """
 struct AnimationsView: View {
@@ -64,6 +65,7 @@ struct AnimationsView: View {
             DoubleOptionView(option: $speed)
             DoubleOptionView(option: $delay)
             IntOptionView(option: $repeatCount)
+            BoolOptionView(option: $autoreverses)
             DoubleOptionView(option: $endSize)
             DoubleOptionView(option: $endDegress)
             
