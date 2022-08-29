@@ -4,7 +4,13 @@ import SwiftUI
 struct DoubleOption: Identifiable{
     var id = UUID()
     var name : String
-    var active: Bool = false
+    var active: Bool = false {
+        willSet{
+            if !newValue {
+                value = defaultValue ?? 0
+            }
+        }
+    }
     var value: Double
     var defaultValue : Double?
     var range: ClosedRange<Double>
