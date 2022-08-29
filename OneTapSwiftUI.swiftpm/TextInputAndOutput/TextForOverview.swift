@@ -5,28 +5,44 @@ struct TextForOverview: View {
         TextFontList()
         Divider()
         TextFontStyle()
-//        Divider()
-//        TextForFontList()
+        Divider()
+        TextForFontList()
     }
 }
 
 struct TextForFontList: View {
+    var code = 
+"""
+    VStack{
+        ForEach(UIFont.familyNames,id:\\.self){ name in
+            HStack{
+                Text(name)
+                Text("ABCD1234")
+                    .font(.custom(name, size: 20))
+            }
+        }
+    }
+"""
     var body: some View {
         VStack{
             Text("Your system font list")
-                .font(.largeTitle)
-            // todo: 解决List不在VStack中显示的问题
-            ScrollView{
-                List{
-                    ForEach(UIFont.familyNames,id:\.self){ name in
-                        HStack{
-                            Text(name)
-                            Text("ABCD1234")
-                                .font(.custom(name, size: 20))
+                .font(.title2)
+            CodePreviewView(code: code)
+            VStack{
+                ScrollView{
+                    VStack{
+                        ForEach(UIFont.familyNames,id:\.self){ name in
+                            HStack{
+                                Text(name)
+                                Text("ABCD1234")
+                                    .font(.custom(name, size: 20))
+                            }
                         }
                     }
                 }
             }
+            .border(.secondary)
+            .frame(height: 200)
         }
     }
 }
@@ -35,47 +51,49 @@ private struct TextFontStyle: View {
     var code = """
     Text("italic and underline")
         .italic()
-        .font(.largeTitle)
+        .font(.title)
         .foregroundColor(.red)
         .underline(true, color: .black)
     Text("bold and strikethrough")
         .bold()
-        .font(.largeTitle)
+        .font(.title)
         .foregroundColor(.red)
         .strikethrough(true, color: .blue)
     Text("system font")
         .font(.system(size: 30, weight: .regular, design: .serif))
     Text("11111monospacedDigit")
         .monospacedDigit()
-        .font(.largeTitle)
+        .font(.title)
         .foregroundColor(.red)
     Text("23456monospacedDigit")
         .monospacedDigit()
-        .font(.largeTitle)
+        .font(.title)
         .foregroundColor(.red)
     """
     var body: some View {
         VStack{
+            Text("Font Style list")
+                .font(.title2)
             CodePreviewView(code: code)
             Text("italic and underline")
                 .italic()
-                .font(.largeTitle)
+                .font(.title)
                 .foregroundColor(.red)
                 .underline(true, color: .black)
             Text("bold and strikethrough")
                 .bold()
-                .font(.largeTitle)
+                .font(.title)
                 .foregroundColor(.red)
                 .strikethrough(true, color: .blue)
             Text("system font")
                 .font(.system(size: 30, weight: .regular, design: .serif))
             Text("11111monospacedDigit")
                 .monospacedDigit()
-                .font(.largeTitle)
+                .font(.title)
                 .foregroundColor(.red)
             Text("23456monospacedDigit")
                 .monospacedDigit()
-                .font(.largeTitle)
+                .font(.title)
                 .foregroundColor(.red)
         }
     }
@@ -99,6 +117,8 @@ Text("1234 caption2").font(.caption2)
     
     var body: some View {
         VStack{
+            Text("SwiftUI font list")
+                .font(.title2)
             CodePreviewView(code: code)
             VStack(alignment:.leading){
                 Group{
