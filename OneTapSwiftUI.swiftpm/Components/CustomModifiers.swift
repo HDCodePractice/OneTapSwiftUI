@@ -11,7 +11,7 @@ struct ValueLabel: ViewModifier {
     func body(content: Content) -> some View {
         content
             .frame(width: 60)
-            .font(.title2)
+            .font(.headline)
             .padding(.horizontal, 8)
             .padding(.vertical, 4)
             .foregroundColor(.white)
