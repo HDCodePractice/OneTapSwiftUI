@@ -36,7 +36,7 @@ struct AnimationsView: View {
                 duration: \(duration.valueString)
                 .speed(\(speed.valueString))
                 .delay(\(delay.valueString))
-                .repeatCount(\(repeatCount.valueString), autoreverses: false)
+                .repeatCount(\(repeatCount.valueString), autoreverses: \(autoreverses.valueString)
             ) { 
                 isAnimation.toggle()
             }
@@ -74,7 +74,7 @@ struct AnimationsView: View {
                     .easeInOut(duration: duration.value)
                     .speed(speed.value)
                     .delay(delay.value)
-                    .repeatCount(repeatCount.value, autoreverses: false)
+                    .repeatCount(repeatCount.value, autoreverses: autoreverses.value)
                 ) { 
                     isAnimation.toggle()
                 }
