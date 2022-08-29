@@ -1,25 +1,24 @@
 import SwiftUI
 
-
-struct DoubleOption: Identifiable{
+struct IntOption: Identifiable{
     var id = UUID()
     var name : String
     var active: Bool = false {
         willSet{
             if !newValue {
-                value = defaultValue ?? 0
+                value = defaultValue
             }
         }
     }
-    var value: Double
-    var defaultValue : Double?
+    var value: Int
+    var defaultValue : Int
     var range: ClosedRange<Double>
     
     init(
         name: String, 
         active:Bool=false, 
-        value:Double, 
-        defaultValue: Double? = nil,
+        value:Int, 
+        defaultValue: Int? = nil,
         range: ClosedRange<Double> 
     ){
         self.name = name
@@ -33,8 +32,17 @@ struct DoubleOption: Identifiable{
         self.range = range
     }
     
+    var doubleValue : Double{
+        set{
+            value = Int(newValue)
+        }
+        get{
+            return Double(value)
+        }
+    }
+    
     var valueString : String{
-        let formatted = String(format: "%.2f", value)
+        let formatted = String(value)
         return formatted
     }
 }
