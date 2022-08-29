@@ -20,6 +20,7 @@ private struct AnimationsView: View {
     @State var delay = DoubleOption(name: "delay", value: 0, range: 0...5)
     @State var endSize = DoubleOption(name: "end size", value: 100, range: 50...200)
     @State var endDegress = DoubleOption(name: "end degress", value: 180, range: 0...720)
+    @State var repeatCount = IntOption(name: "repeat count", value: 1, range: 0...5)
     
     var code :String{ return """
 struct AnimationsView: View {
@@ -34,6 +35,7 @@ struct AnimationsView: View {
                 duration: \(duration.valueString)
                 .speed(\(speed.valueString))
                 .delay(\(delay.valueString))
+                .repeatCount(\(repeatCount.valueString), autoreverses: false)
             ) { 
                 isAnimation.toggle()
             }
@@ -61,6 +63,7 @@ struct AnimationsView: View {
             DoubleOptionView(option: $duration)
             DoubleOptionView(option: $speed)
             DoubleOptionView(option: $delay)
+            IntOptionView(option: $repeatCount)
             DoubleOptionView(option: $endSize)
             DoubleOptionView(option: $endDegress)
             
@@ -69,7 +72,7 @@ struct AnimationsView: View {
                     .easeInOut(duration: duration.value)
                     .speed(speed.value)
                     .delay(delay.value)
-                    .repeatCount(3, autoreverses: false)
+                    .repeatCount(repeatCount.value, autoreverses: false)
                 ) { 
                     isAnimation.toggle()
                 }
