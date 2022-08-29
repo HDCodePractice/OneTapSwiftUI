@@ -5,28 +5,44 @@ struct TextForOverview: View {
         TextFontList()
         Divider()
         TextFontStyle()
-//        Divider()
-//        TextForFontList()
+        Divider()
+        TextForFontList()
     }
 }
 
 struct TextForFontList: View {
+    var code = 
+"""
+    VStack{
+        ForEach(UIFont.familyNames,id:\\.self){ name in
+            HStack{
+                Text(name)
+                Text("ABCD1234")
+                    .font(.custom(name, size: 20))
+            }
+        }
+    }
+"""
     var body: some View {
         VStack{
             Text("Your system font list")
-                .font(.largeTitle)
-            // todo: 解决List不在VStack中显示的问题
-            ScrollView{
-                List{
-                    ForEach(UIFont.familyNames,id:\.self){ name in
-                        HStack{
-                            Text(name)
-                            Text("ABCD1234")
-                                .font(.custom(name, size: 20))
+                .font(.title2)
+            CodePreviewView(code: code)
+            VStack{
+                ScrollView{
+                    VStack{
+                        ForEach(UIFont.familyNames,id:\.self){ name in
+                            HStack{
+                                Text(name)
+                                Text("ABCD1234")
+                                    .font(.custom(name, size: 20))
+                            }
                         }
                     }
                 }
             }
+            .border(.secondary)
+            .frame(height: 200)
         }
     }
 }
@@ -56,6 +72,8 @@ private struct TextFontStyle: View {
     """
     var body: some View {
         VStack{
+            Text("Font Style list")
+                .font(.title2)
             CodePreviewView(code: code)
             Text("italic and underline")
                 .italic()
@@ -99,6 +117,8 @@ Text("1234 caption2").font(.caption2)
     
     var body: some View {
         VStack{
+            Text("SwiftUI font list")
+                .font(.title2)
             CodePreviewView(code: code)
             VStack(alignment:.leading){
                 Group{
