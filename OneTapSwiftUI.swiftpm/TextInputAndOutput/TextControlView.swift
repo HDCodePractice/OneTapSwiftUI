@@ -9,13 +9,13 @@ struct TextControlView: View {
                     url: "https://developer.apple.com/documentation/swiftui/text", 
                     description: "A view that displays one or more lines of read-only text."
                 )
-                TextInitView()
-                Divider()
-                TextForOverview()
+                TextFromStringView()
                 Divider()
                 TextForDateView()
                 Divider()
                 TextFormattingView()
+                Divider()
+                TextForOverview()
                 Divider()
             }
         }

@@ -1,6 +1,6 @@
 import SwiftUI
 
-struct TextInitView: View {
+struct TextFromStringView: View {
     var code = """
 Text("Creating a Text View from a string")
 Text(\"\"\"
@@ -33,8 +33,8 @@ We can **make** a *fenced* code blocks.
     }
 }
 
-struct TextInitView_Previews: PreviewProvider {
+struct TextFromStringView_Previews: PreviewProvider {
     static var previews: some View {
-        TextInitView()
+        TextFromStringView()
     }
 }
