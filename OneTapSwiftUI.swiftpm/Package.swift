@@ -32,6 +32,9 @@ let package = Package(
                 .landscapeLeft,
                 .portraitUpsideDown(.when(deviceFamilies: [.pad]))
             ],
+            capabilities: [
+                .locationWhenInUse(purposeString: "Use Location in Map View show case")
+            ],
             appCategory: .developerTools
         )
     ],
