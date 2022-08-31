@@ -57,16 +57,16 @@ var body: some View {
     
     var body: some View {
         VStack{
-            Text("Creating a text view for a date")
+            Text("Creating form a date")
                 .font(.title2)
             CodePreviewView(code: code)
             VStack(alignment: .leading){
                 ForEach(DateStyleType.allCases){ dateStyleType in
                     Text("\(dateStyleType.rawValue): ").bold() + Text(now, style: dateStyleType.caseValue)
                 }
-                Text("yesterday to tomorrow: ") + Text(yesterday...tomorrow)
-                Text("one hour to now: ") + Text(oneHourAgo...now)
-                Text("one hour to now: ") + Text(DateInterval(start: oneHourAgo, end: now))
+                Text("yesterday to tomorrow: ").bold() + Text(yesterday...tomorrow)
+                Text("one hour to now: ").bold() + Text(oneHourAgo...now)
+                Text("one hour to now: ").bold() + Text(DateInterval(start: oneHourAgo, end: now))
             }
             Button("Reset"){
                 now = Date()
