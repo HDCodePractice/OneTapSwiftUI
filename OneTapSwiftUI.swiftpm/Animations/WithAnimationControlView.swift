@@ -3,12 +3,15 @@ import SwiftUI
 struct WithAnimationControlView: View {
     var body: some View {
         ScrollView{
-            HeadlineView(
-                title: "withAnimation", 
-                url: "https://developer.apple.com/documentation/swiftui/withanimation(_:_:)", 
-                description: "Returns the result of recomputing the view’s body with the provided animation."
-            )
-            AnimationsView()
+            VStack{
+                HeadlineView(
+                    title: "withAnimation", 
+                    url: "https://developer.apple.com/documentation/swiftui/withanimation(_:_:)", 
+                    description: "Returns the result of recomputing the view’s body with the provided animation."
+                )
+                AnimationsView()
+            }
+            .padding()
         }.padding()
     }
 }
