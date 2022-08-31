@@ -18,6 +18,7 @@ struct TextControlView: View {
                 TextForOverview()
                 Divider()
             }
+            .padding()
         }
         .padding()
     }
