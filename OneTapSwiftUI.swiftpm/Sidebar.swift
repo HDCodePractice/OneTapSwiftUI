@@ -29,6 +29,13 @@ struct Sidebar: View {
                     WithAnimationControlView()
                 }
             }
+            
+            Section("Map"){
+                NavigationLink("Map"){
+                    MapControlView()
+                }
+            }
+            
         }.listStyle(.insetGrouped)
     }
 }

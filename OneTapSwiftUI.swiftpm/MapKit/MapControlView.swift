@@ -37,7 +37,7 @@ private struct SimpleMapView: View {
             coordinateRegion: $coordinateRegion ,
             showsUserLocation: \(showsUserLocation.valueString)
         )
-        .frame(height: 500)
+        .frame(height: 300)
     }
 }
 """
@@ -76,8 +76,7 @@ private struct SimpleMapView: View {
         .onChange(of: coordinateRegion.span.longitudeDelta, perform: { newValue in
             spanLongitudeDelta.value = newValue
         })
-        
-        .frame(height: 500)
+        .frame(height: 300)
         
         DoubleOptionView(option: $centerLatitude)
             .onChange(of: centerLatitude.value) { newValue in
