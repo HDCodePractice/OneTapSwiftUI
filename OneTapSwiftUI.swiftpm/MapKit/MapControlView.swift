@@ -12,14 +12,102 @@ struct MapControlView: View {
                 )
                 SimpleMapView()
                 Divider()
+                MapInteractionModesView()
+                Divider()
             }
             .padding()
         }.padding()
     }
 }
 
-private struct SimpleMapView: View {
+struct MapInteractionModesView: View {
     
+    enum MapInteractionModesType: String,CaseIterable,Identifiable{
+        case all = ".all"
+        case pan = ".pan"
+        case zoom = ".zoom"
+        case null = "[]"
+        
+        var id: Self { self }
+        var caseValue: MapInteractionModes {
+            switch self{
+            case .all:
+                return .all
+            case .pan:
+                return .pan
+            case .zoom:
+                return .zoom
+            case .null:
+                return []
+            }
+        }
+    }
+    
+    @State var interactionModes : MapInteractionModesType = .all
+    
+    var code : String{
+        return """
+@State var coordinateRegion = MKCoordinateRegion(
+    center: CLLocationCoordinate2D(
+        latitude: 37.330828, 
+        longitude: -122.007495), 
+    span: MKCoordinateSpan(
+        latitudeDelta: 0.02, 
+        longitudeDelta: 0.02)
+)
+var body: some View {
+    Map(
+        coordinateRegion: $coordinateRegion,
+        interactionModes: \(interactionModes.rawValue)
+    )
+    .frame(height: 300)
+    HStack{
+        Text("interactionModes:")
+            .bold()
+        Picker("", selection: $interactionModes, content: { 
+            ForEach(MapInteractionModesType.allCases){ type in
+                Text(type.rawValue)
+            }
+        })
+        .pickerStyle(.segmented)
+    }
+}
+"""
+    }
+    
+    @State var coordinateRegion = MKCoordinateRegion(
+        center: CLLocationCoordinate2D(
+            latitude: 37.330828, 
+            longitude: -122.007495), 
+        span: MKCoordinateSpan(
+            latitudeDelta: 0.02, 
+            longitudeDelta: 0.02)
+    )
+    var body: some View {
+        VStack{
+            Text("Map interactionModes")
+                .font(.title2)
+            CodePreviewView(code: code)
+            Map(
+                coordinateRegion: $coordinateRegion,
+                interactionModes: interactionModes.caseValue
+            )
+            .frame(height: 300)
+            HStack{
+                Text("interactionModes:")
+                    .bold()
+                Picker("", selection: $interactionModes, content: { 
+                    ForEach(MapInteractionModesType.allCases){ type in
+                        Text(type.rawValue)
+                    }
+                })
+                .pickerStyle(.segmented)
+            }
+        }
+    }
+}
+
+private struct SimpleMapView: View {
     var code : String {
         return """
 private struct SimpleMapView: View {
@@ -43,11 +131,11 @@ private struct SimpleMapView: View {
 """
     }
     
-    @State var centerLatitude = DoubleOption(name: "center latitudeDelta", value: 37.330828, range: -90...90)
-    @State var centerLongitude = DoubleOption(name: "center longitudeDelta", value: -122.007495, range: -180...180)
-    @State var spanLatitudeDelta = DoubleOption(name: "span latitudeDelta", value: 0.02, range: 0...10)
-    @State var spanLongitudeDelta = DoubleOption(name: "span longitudeDelta", value: 0.02, range: 0...10)
-    @State var showsUserLocation = BoolOption(name: "showsUserLocation", value: false)
+    @State var centerLatitude = DoubleOption(name: "latitude", value: 37.330828, range: -90...90)
+    @State var centerLongitude = DoubleOption(name: "longitude", value: -122.007495, range: -180...180)
+    @State var spanLatitudeDelta = DoubleOption(name: "latitudeDelta", value: 0.02, range: 0...10)
+    @State var spanLongitudeDelta = DoubleOption(name: "longitudeDelta", value: 0.02, range: 0...10)
+    @State var showsUserLocation = BoolOption(name: "UserLocation", value: false)
     
     @State var coordinateRegion = MKCoordinateRegion(
         center: CLLocationCoordinate2D(
@@ -59,6 +147,8 @@ private struct SimpleMapView: View {
     )
     
     var body: some View {
+        Text("Simple Map View")
+            .font(.title2)
         CodePreviewView(code: code)
         Map(
             coordinateRegion: $coordinateRegion ,
