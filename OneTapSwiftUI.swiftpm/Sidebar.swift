@@ -28,6 +28,9 @@ struct Sidebar: View {
                 NavigationLink("withAnimation"){
                     WithAnimationControlView()
                 }
+                NavigationLink("Animatable"){
+                    AnimatableView()
+                }
             }
             
             Section("Map"){
