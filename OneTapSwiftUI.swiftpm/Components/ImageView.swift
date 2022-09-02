@@ -3,7 +3,7 @@ import SwiftUI
 
 
 struct ImageView: View {
-    @State var buttonText = "I'm a button. Click on me."
+    
     
     var body: some View {
         
