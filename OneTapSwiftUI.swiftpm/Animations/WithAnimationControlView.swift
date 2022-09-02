@@ -148,7 +148,7 @@ struct AnimationsView: View {
             .rotationEffect(Angle(degrees: isAnimation ? 0 : \(endDegress.valueString)))
         Button("Start Animation"){
             withAnimation(.easeInOut(
-                duration: \(duration.valueString)
+                duration: \(duration.valueString))
                 .speed(\(speed.valueString))
                 .delay(\(delay.valueString))
                 .repeatCount(\(repeatCount.valueString), autoreverses: \(autoreverses.valueString)
