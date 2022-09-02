@@ -18,7 +18,7 @@ struct AnimatableView: View {
     }
 }
 
-struct AnimationColorChangeView: View {
+private struct AnimationColorChangeView: View {
     var code : String{
         return """
 struct AnimationColorChangeView: View {
@@ -88,7 +88,7 @@ struct AnimationColorChange: View, Animatable {
     }
 }
 
-struct AnimationColorChange: View, Animatable {
+private struct AnimationColorChange: View, Animatable {
     var progress : Double
     var animatableData: Double{
         get { progress }
