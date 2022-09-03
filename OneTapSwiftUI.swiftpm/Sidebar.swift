@@ -3,6 +3,12 @@ import SwiftUI
 struct Sidebar: View {
     var body: some View {
         List{
+            Section("State and data flow"){
+                NavigationLink("AppStorage"){
+                    AppStorageControlView()
+                }
+            }
+            
             Section("Text input and output"){
                 NavigationLink("Text"){
                     TextControlView()
