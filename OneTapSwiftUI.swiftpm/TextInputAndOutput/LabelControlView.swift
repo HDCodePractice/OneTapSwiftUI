@@ -1,6 +1,6 @@
 import SwiftUI
 
-struct LabelView: View {
+struct LabelControlView: View {
     
     var body: some View {
         
@@ -10,34 +10,28 @@ struct LabelView: View {
                 url: "https://developer.apple.com/documentation/swiftui/label", 
                 description: "A standard label for user interface items, consisting of an icon with a title."
             )
-            
             LabelViewCode()
-            
-            Label("Lighting", systemImage: "bolt.fill")
-                .font(.largeTitle)
-                .padding()
         }
     }
 }
 
 private struct LabelViewCode: View {
     var code = """
-    
 Label("Lighting", systemImage: "bolt.fill")
     .font(.largeTitle)
     .padding()
-        
-
-        
 """
     var body: some View {
         CodePreviewView(code: code)
+        Label("Lighting", systemImage: "bolt.fill")
+            .font(.largeTitle)
+            .padding()
     }
 }
 
-struct LabelView_Previews: PreviewProvider {
+struct LabelControlView_Previews: PreviewProvider {
     static var previews: some View {
-        LabelView()
+        LabelControlView()
     }
 }
 
