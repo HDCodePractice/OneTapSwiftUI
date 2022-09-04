@@ -1,6 +1,6 @@
 import SwiftUI
 
-struct DividerView: View {
+struct DividerControlView: View {
     
     var body: some View {
         
@@ -13,28 +13,24 @@ struct DividerView: View {
             
             DividerViewCode()
                 .padding()
-            Divider()
-                .padding()
-            
         }
     }
 }
 
 private struct DividerViewCode: View {
     var code = """
-    
 Divider()
-
-        
 """
     var body: some View {
         CodePreviewView(code: code)
+        Divider()
+            .padding()
     }
 }
 
-struct DividerView_Previews: PreviewProvider {
+struct DividerControlView_Previews: PreviewProvider {
     static var previews: some View {
-        DividerView()
+        DividerControlView()
     }
 }
 
