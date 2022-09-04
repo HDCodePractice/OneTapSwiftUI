@@ -16,6 +16,9 @@ struct Sidebar: View {
             }
             
             Section("Controls and indicators"){
+                NavigationLink("Button"){
+                    ButtonControlView()
+                }
                 NavigationLink("Menu"){
                     MenuControlView()
                 }
