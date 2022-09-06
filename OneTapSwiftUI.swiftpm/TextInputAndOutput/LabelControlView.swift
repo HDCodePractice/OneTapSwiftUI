@@ -5,16 +5,62 @@ struct LabelControlView: View {
         ScrollView{
             VStack{
                 HeadlineView(
-                    title: "Label", 
-                    url: "https://developer.apple.com/documentation/swiftui/label", 
+                    title: "Label",
+                    url: "https://developer.apple.com/documentation/swiftui/label",
                     description: "A standard label for user interface items, consisting of an icon with a title."
                 )
                 LabelViewCode()
+                Divider()
+                LabelStyleSample()
             }
             .padding()
         }
     }
 }
+
+private struct LabelStyleSample: View {
+    var code = """
+    struct MyLabelStyle: LabelStyle{
+        func makeBody(configuration: Configuration) -> some View {
+            HStack{
+                configuration.title
+                    .foregroundColor(.accentColor)
+                configuration.icon
+                    .foregroundColor(.red)
+            }
+        }
+    }
+    
+    struct LabelStyleSample: View {
+        var body: some View {
+            Label("MyLabelStyle",systemImage: "heart")
+                .labelStyle(MyLabelStyle())
+        }
+    }
+    """
+    var body: some View {
+        VStack{
+            Text("Custom LabelStyle")
+                .font(.title2)
+            CodePreviewView(code: code)
+            Label("MyLabelStyle",systemImage: "heart")
+                .labelStyle(MyLabelStyle())
+        }
+    }
+}
+
+private struct MyLabelStyle: LabelStyle{
+    func makeBody(configuration: Configuration) -> some View {
+        HStack{
+            configuration.title
+                .foregroundColor(.accentColor)
+            configuration.icon
+                .foregroundColor(.red)
+        }
+    }
+    
+}
+
 
 private struct LabelViewCode: View {
     var code = """
@@ -42,10 +88,10 @@ Label("Favorites", systemImage: "heart")
         VStack{
             Label("systemImage label", systemImage: "bolt.fill")
             Label("image label", image: "OneTapSwiftUI-small")
-            Label { 
+            Label {
                 Text("different label")
                     .bold()
-            } icon: { 
+            } icon: {
                 Image("OneTapSwiftUI-small")
                     .resizable()
                     .scaledToFit()
