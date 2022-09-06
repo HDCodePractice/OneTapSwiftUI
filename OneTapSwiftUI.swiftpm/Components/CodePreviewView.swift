@@ -21,7 +21,7 @@ struct CodePreviewView: View {
                 .font(.footnote)
                 .padding(20)
                 .textSelection(.enabled)
-                .background(Color("codePreviewBackground"))
+//                .background(Color("codePreviewBackground"))
                 .clipShape(
                     RoundedRectangle(cornerRadius: 10, style: .continuous)
                 )
@@ -52,7 +52,7 @@ struct CodePreviewView: View {
                         .foregroundColor(.primary)
                         .padding(.vertical, 2)
                         .padding(.horizontal, 8)
-                        .background(Color("copyPopupBackgroundColor"))
+//                        .background(Color("copyPopupBackgroundColor"))
                         .clipShape(
                             RoundedRectangle(cornerRadius: 4, style: .continuous)
                         )
