@@ -1,31 +1,65 @@
 import SwiftUI
 
 struct LabelControlView: View {
-    
     var body: some View {
-        
-        VStack{
-            HeadlineView(
-                title: "Label", 
-                url: "https://developer.apple.com/documentation/swiftui/label", 
-                description: "A standard label for user interface items, consisting of an icon with a title."
-            )
-            LabelViewCode()
+        ScrollView{
+            VStack{
+                HeadlineView(
+                    title: "Label", 
+                    url: "https://developer.apple.com/documentation/swiftui/label", 
+                    description: "A standard label for user interface items, consisting of an icon with a title."
+                )
+                LabelViewCode()
+            }
+            .padding()
         }
     }
 }
 
 private struct LabelViewCode: View {
     var code = """
-Label("Lighting", systemImage: "bolt.fill")
-    .font(.largeTitle)
-    .padding()
+Label("Favorites", systemImage: "heart")
+Label("image label", image: "OneTapSwiftUI-small")
+Label { 
+    Text("different label")
+        .bold()
+} icon: { 
+    Image("OneTapSwiftUI-small")
+        .resizable()
+        .scaledToFit()
+}
+Label("Favorites", systemImage: "heart")
+    .labelStyle(.automatic)
+Label("Favorites", systemImage: "heart")
+    .labelStyle(.titleOnly)
+Label("Favorites", systemImage: "heart")
+    .labelStyle(.iconOnly)
+Label("Favorites", systemImage: "heart")
+    .labelStyle(.titleAndIcon)
 """
     var body: some View {
         CodePreviewView(code: code)
-        Label("Lighting", systemImage: "bolt.fill")
-            .font(.largeTitle)
-            .padding()
+        VStack{
+            Label("systemImage label", systemImage: "bolt.fill")
+            Label("image label", image: "OneTapSwiftUI-small")
+            Label { 
+                Text("different label")
+                    .bold()
+            } icon: { 
+                Image("OneTapSwiftUI-small")
+                    .resizable()
+                    .scaledToFit()
+            }
+            Label("Favorites", systemImage: "heart")
+                .labelStyle(.automatic)
+            Label("Favorites", systemImage: "heart")
+                .labelStyle(.titleOnly)
+            Label("Favorites", systemImage: "heart")
+                .labelStyle(.iconOnly)
+            Label("Favorites", systemImage: "heart")
+                .labelStyle(.titleAndIcon)
+        }
+        .border(.primary)
     }
 }
 
