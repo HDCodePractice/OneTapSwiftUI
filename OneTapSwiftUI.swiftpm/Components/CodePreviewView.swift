@@ -82,11 +82,11 @@ struct CodePreviewView: View {
                     }
             }
             HStack{
-                Image(systemName: "textformat.size.smaller")
+                (Text(Image(systemName: "textformat.size.larger")) + Text("-"))
+                    .font(.footnote)
                     .foregroundColor(
                         copyButtonHovered ? .primary : .secondary.opacity(0.6)
                     )
-                    .frame(width: 15, height: 15)
                     .padding(4)
                     .overlay(
                         RoundedRectangle(cornerRadius: 4, style: .continuous)
@@ -98,11 +98,11 @@ struct CodePreviewView: View {
                     .onTapGesture {
                         codeFontSize -= 1
                     }
-                Image(systemName: "textformat.size.larger")
+                (Text(Image(systemName: "textformat.size.larger")) + Text("+"))
+                    .font(.footnote)
                     .foregroundColor(
                         copyButtonHovered ? .primary : .secondary.opacity(0.6)
                     )
-                    .frame(width: 15, height: 15)
                     .padding(4)
                     .overlay(
                         RoundedRectangle(cornerRadius: 4, style: .continuous)
