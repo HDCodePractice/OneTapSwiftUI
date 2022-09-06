@@ -10,6 +10,9 @@ struct Sidebar: View {
             }
             
             Section("Text input and output"){
+                NavigationLink("Label"){
+                    LabelControlView()
+                }
                 NavigationLink("Text"){
                     TextControlView()
                 }
