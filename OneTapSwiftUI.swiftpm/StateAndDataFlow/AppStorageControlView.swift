@@ -210,7 +210,7 @@ struct StoringSimpleValueView: View {
         return """
 struct StoringSimpleValueView: View {
     @AppStorage("count") var count = 0
-    @AppStorage("count", store: UserDefaults(suiteName: "one.hdcola.onetapswiftui")) var count2 = 0
+    @AppStorage("count", store: UserDefaults(suiteName: "onetapswiftui.count")) var count2 = 0
     var body: some View {
         VStack{
             Text("Storing a value")
@@ -238,7 +238,7 @@ struct StoringSimpleValueView: View {
     }
     
     @AppStorage("count") var count = 0
-    @AppStorage("count", store: UserDefaults(suiteName: "one.hdcola.onetapswiftui")) var count2 = 0
+    @AppStorage("count", store: UserDefaults(suiteName: "onetapswiftui.count")) var count2 = 0
     var body: some View {
         VStack{
             Text("Storing a value")
