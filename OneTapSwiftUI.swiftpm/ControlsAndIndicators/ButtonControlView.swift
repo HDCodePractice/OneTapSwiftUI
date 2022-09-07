@@ -5,8 +5,8 @@ struct ButtonControlView: View {
         ScrollView{
             VStack{
                 HeadlineView(
-                    title: "Button", 
-                    url: "https://developer.apple.com/documentation/swiftui/button", 
+                    title: "Button",
+                    url: "https://developer.apple.com/documentation/swiftui/button",
                     description: "A control that initiates an action."
                 )
                 ButtonViewCode()
@@ -20,23 +20,36 @@ struct ButtonControlView: View {
 private struct ButtonViewCode: View {
     var code = """
 struct ButtonViewCode: View {
-        @State var isTapButton = false
+        @State var tapMessage = "Tap a Button"
     var body: some View {
-        CodePreviewView(code: code)
-        Button("\\(isTapButton ? "I'm a button. Click on me." : "Just clicked" )"){
-            isTapButton.toggle()
-            
-        }.buttonStyle(.borderedProminent)
+        Text( tapMessage )
+        HStack{
+            Button("Button1"){
+                tapMessage = "Button1"
+            }.buttonStyle(.borderedProminent)
+            Button {
+                tapMessage = "Button2"
+            } label: {
+                Label("Button2",systemImage: "2.circle")
+            }.buttonStyle(.borderedProminent)
+        }
     }
 }
 """
-    @State var isTapButton = false
+    @State var tapMessage = "Tap a Button"
     var body: some View {
         CodePreviewView(code: code)
-        Button("\(isTapButton ? "I'm a button. Click on me." : "Just clicked" )"){
-            isTapButton.toggle()
-            
-        }.buttonStyle(.borderedProminent)
+        Text( tapMessage )
+        HStack{
+            Button("Button1"){
+                tapMessage = "Button1"
+            }.buttonStyle(.borderedProminent)
+            Button {
+                tapMessage = "Button2"
+            } label: {
+                Label("Button2",systemImage: "2.circle")
+            }.buttonStyle(.borderedProminent)
+        }
     }
 }
 
