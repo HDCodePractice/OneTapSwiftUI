@@ -20,19 +20,23 @@ struct ButtonControlView: View {
 private struct ButtonViewCode: View {
     var code = """
 struct ButtonViewCode: View {
-    @State var buttonText = "I'm a button. Click on me.""
+        @State var isTapButton = false
     var body: some View {
         CodePreviewView(code: code)
-        Button("\\(buttonText)"){ buttonText = "Just clicked"}
-            .buttonStyle(.borderedProminent)
+        Button("\\(isTapButton ? "I'm a button. Click on me." : "Just clicked" )"){
+            isTapButton.toggle()
+            
+        }.buttonStyle(.borderedProminent)
     }
 }
 """
-    @State var buttonText = "I'm a button. Click on me."
+    @State var isTapButton = false
     var body: some View {
         CodePreviewView(code: code)
-        Button("\(buttonText)"){ buttonText = "Just clicked"}
-            .buttonStyle(.borderedProminent)
+        Button("\(isTapButton ? "I'm a button. Click on me." : "Just clicked" )"){
+            isTapButton.toggle()
+            
+        }.buttonStyle(.borderedProminent)
     }
 }
 
