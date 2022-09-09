@@ -10,6 +10,8 @@ struct ButtonControlView: View {
                     description: "A control that initiates an action."
                 )
                 ButtonViewCode()
+                Divider()
+                ButtonStyleSample()
             }
             .padding()
         }
@@ -17,9 +19,62 @@ struct ButtonControlView: View {
     }
 }
 
+private struct MyButtonStyle: ButtonStyle {
+    var bgColor: Color
+    
+    func makeBody(configuration: Self.Configuration) -> some View {
+        configuration.label
+            .padding(10)
+            .background(
+                ZStack {
+                    RoundedRectangle(cornerRadius: 10, style: .continuous)
+                        .shadow(color: .white, radius: configuration.isPressed ? 7: 10, x: configuration.isPressed ? -5: -15, y: configuration.isPressed ? -5: -15)
+                        .shadow(color: .black, radius: configuration.isPressed ? 7: 10, x: configuration.isPressed ? 5: 15, y: configuration.isPressed ? 5: 15)
+                        .blendMode(.overlay)
+                    RoundedRectangle(cornerRadius: 10, style: .continuous)
+                        .fill(bgColor)
+                }
+            )
+            .scaleEffect(configuration.isPressed ? 0.95: 1)
+            .foregroundColor(.primary)
+    }
+}
+
+private struct ButtonStyleSample: View {
+    var code = """
+struct MyButtonStyle: ButtonStyle {
+    var bgColor: Color
+    
+    func makeBody(configuration: Self.Configuration) -> some View {
+        configuration.label
+            .padding(10)
+            .background(
+                ZStack {
+                    RoundedRectangle(cornerRadius: 10, style: .continuous)
+                        .shadow(color: .white, radius: configuration.isPressed ? 7: 10, x: configuration.isPressed ? -5: -15, y: configuration.isPressed ? -5: -15)
+                        .shadow(color: .black, radius: configuration.isPressed ? 7: 10, x: configuration.isPressed ? 5: 15, y: configuration.isPressed ? 5: 15)
+                        .blendMode(.overlay)
+                    RoundedRectangle(cornerRadius: 10, style: .continuous)
+                        .fill(bgColor)
+                }
+            )
+            .scaleEffect(configuration.isPressed ? 0.95: 1)
+            .foregroundColor(.primary)
+    }
+}
+
 struct ButtonStyleSample: View {
     var body: some View {
-        /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Hello, world!@*/Text("Hello, world!")/*@END_MENU_TOKEN@*/
+        Button("Custom ButtonStyle"){}
+            .buttonStyle(MyButtonStyle(bgColor: .accentColor))
+    }
+}
+"""
+    
+    var body: some View {
+        CodePreviewView(code: code)
+        Button("Custom ButtonStyle"){}
+            .buttonStyle(MyButtonStyle(bgColor: .accentColor))
     }
 }
 
