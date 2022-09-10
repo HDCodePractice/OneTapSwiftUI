@@ -73,6 +73,7 @@ Label {
     Image("OneTapSwiftUI-small")
         .resizable()
         .scaledToFit()
+        .frame(width: 40)
 }
 Label("Favorites", systemImage: "heart")
     .labelStyle(.automatic)
@@ -95,6 +96,7 @@ Label("Favorites", systemImage: "heart")
                 Image("OneTapSwiftUI-small")
                     .resizable()
                     .scaledToFit()
+                    .frame(width: 40)
             }
             Label("Favorites", systemImage: "heart")
                 .labelStyle(.automatic)
