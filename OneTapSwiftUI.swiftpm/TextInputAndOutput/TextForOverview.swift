@@ -6,12 +6,56 @@ struct TextForOverview: View {
         Divider()
         TextFontStyle()
         Divider()
+        TextCombining()
+        Divider()
         TextForFontList()
+        Divider()
+        
     }
 }
 
-struct TextForFontList: View {
-    var code = 
+struct TextCombining: View {
+    var code = """
+Text("Combining text views")
+    .font(.title2)
+Text("One")
+    .foregroundColor(.red)
++ Text("Tap")
+    .font(.title2)
++ Text("SwiftUI")
+    .font(.title)
+    .foregroundColor(.mint)
+(Text("One") + Text("Tap") + Text("SwiftUI") + Text(Image(systemName: "star")))
+    .font(.title)
+    .foregroundColor(.cyan)
+Text(Image(systemName: "star")) + Text("One") + Text("Tap") + Text("SwiftUI")
+    .font(.title)
+    .foregroundColor(.red)
+"""
+    var body: some View {
+        VStack{
+            Text("Combining text views")
+                .font(.title2)
+            CodePreviewView(code: code)
+            Text("One")
+                .foregroundColor(.red)
+            + Text("Tap")
+                .font(.title2)
+            + Text("SwiftUI")
+                .font(.title)
+                .foregroundColor(.mint)
+            (Text("One") + Text("Tap") + Text("SwiftUI") + Text(Image(systemName: "star")))
+                .font(.title)
+                .foregroundColor(.cyan)
+            Text(Image(systemName: "star")) + Text("One") + Text("Tap") + Text("SwiftUI")
+                .font(.title)
+                .foregroundColor(.red)
+        }
+    }
+}
+
+private struct TextForFontList: View {
+    var code =
 """
     VStack{
         ForEach(UIFont.familyNames,id:\\.self){ name in
@@ -49,27 +93,27 @@ struct TextForFontList: View {
 
 private struct TextFontStyle: View {
     var code = """
-    Text("italic and underline")
-        .italic()
-        .font(.title)
-        .foregroundColor(.red)
-        .underline(true, color: .black)
-    Text("bold and strikethrough")
-        .bold()
-        .font(.title)
-        .foregroundColor(.red)
-        .strikethrough(true, color: .blue)
-    Text("system font")
-        .font(.system(size: 30, weight: .regular, design: .serif))
-    Text("11111monospacedDigit")
-        .monospacedDigit()
-        .font(.title)
-        .foregroundColor(.red)
-    Text("23456monospacedDigit")
-        .monospacedDigit()
-        .font(.title)
-        .foregroundColor(.red)
-    """
+Text("italic and underline")
+    .italic()
+    .foregroundColor(.red)
+    .underline(true, color: .black)
+Text("bold and strikethrough")
+    .bold()
+    .foregroundColor(.red)
+    .strikethrough(true, color: .blue)
+Text("system font")
+    .font(.system(size: 30, weight: .regular, design: .serif))
+Text("11111notMonospacedDigit")
+    .foregroundColor(.red)
+Text("23456notMonospacedDigit")
+    .foregroundColor(.red)
+Text("11111monospacedDigit")
+    .monospacedDigit()
+    .foregroundColor(.red)
+Text("23456monospacedDigit")
+    .monospacedDigit()
+    .foregroundColor(.red)
+"""
     var body: some View {
         VStack{
             Text("Font Style list")
@@ -77,23 +121,23 @@ private struct TextFontStyle: View {
             CodePreviewView(code: code)
             Text("italic and underline")
                 .italic()
-                .font(.title)
                 .foregroundColor(.red)
                 .underline(true, color: .black)
             Text("bold and strikethrough")
                 .bold()
-                .font(.title)
                 .foregroundColor(.red)
                 .strikethrough(true, color: .blue)
             Text("system font")
                 .font(.system(size: 30, weight: .regular, design: .serif))
+            Text("11111notMonospacedDigit")
+                .foregroundColor(.red)
+            Text("23456notMonospacedDigit")
+                .foregroundColor(.red)
             Text("11111monospacedDigit")
                 .monospacedDigit()
-                .font(.title)
                 .foregroundColor(.red)
             Text("23456monospacedDigit")
                 .monospacedDigit()
-                .font(.title)
                 .foregroundColor(.red)
         }
     }
@@ -142,8 +186,10 @@ Text("1234 caption2").font(.caption2)
 
 struct TextForOverview_Previews: PreviewProvider {
     static var previews: some View {
-        VStack{
-            TextForOverview()
+        ScrollView{
+            VStack{
+                TextForOverview()
+            }
         }
     }
 }

@@ -71,7 +71,7 @@ struct StoringArrayView: View {
             Text("Storing an array")
                 .font(.title2)
             VStack{
-                Text("**Int array:\\( array.reduce("", {x,y in x+" "+y }) )")
+                Text("Int array:\\( array.reduce("", {x,y in x+" "+y }) )")
                 HStack{
                     Button("+"){ array.append("\\(array.count)")}
                     Button("-"){ 
@@ -95,7 +95,7 @@ struct StoringArrayView: View {
                 .font(.title2)
             CodePreviewView(code: code)
             VStack{
-                Text("**Int array:\( array.reduce("", {x,y in x+" "+y }) )")
+                Text("**Int array**:\( array.reduce("", {x,y in x+" "+y }) )")
                 HStack{
                     Button("+"){ array.append("\(array.count)")}
                     Button("-"){ 
