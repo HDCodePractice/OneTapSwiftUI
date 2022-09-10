@@ -145,7 +145,7 @@ extension Array: RawRepresentable where Element: Codable {
 }
 
 struct StoringObjectView: View {
-    @AppStorage("object") var user = User(name: "hdcola", age: 18)
+        @AppStorage("object") var users = [User(name: "hdcola", age: 0)]
     var body: some View {
         VStack{
             Text("Storing a object")
