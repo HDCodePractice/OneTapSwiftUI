@@ -2,6 +2,8 @@ import SwiftUI
 
 struct TextForOverview: View {
     var body: some View {
+        MultilineTextAlignmentList()
+        Divider()
         TextFontList()
         Divider()
         TextFontStyle()
@@ -12,7 +14,39 @@ struct TextForOverview: View {
     }
 }
 
-struct TextCombining: View {
+private struct MultilineTextAlignmentList: View {
+    var code = """
+Text("This is a multiline Text alighnment on leading test.This is a multiline Text alighnment on leading test.")
+    .multilineTextAlignment(.leading)
+Divider()
+Text("This is a multiline Text alighnment on center test.This is a multiline Text alighnment on center test.")
+    .multilineTextAlignment(.center)
+Divider()
+Text("This is a multiline Text alighnment on center test.This is a multiline Text alighnment on center test.")
+    .multilineTextAlignment(.trailing)
+"""
+    
+    var body: some View {
+        VStack{
+            Text("Multiline Text Alignment")
+                .font(.title2)
+            CodePreviewView(code: code)
+            VStack{
+                Text("This is a multiline Text alighnment on leading test.This is a multiline Text alighnment on leading test.")
+                    .multilineTextAlignment(.leading)
+                Divider()
+                Text("This is a multiline Text alighnment on center test.This is a multiline Text alighnment on center test.")
+                    .multilineTextAlignment(.center)
+                Divider()
+                Text("This is a multiline Text alighnment on center test.This is a multiline Text alighnment on center test.")
+                    .multilineTextAlignment(.trailing)
+            }
+            .border(.black)
+        }
+    }
+}
+
+private struct TextCombining: View {
     var code = """
 Text("Combining text views")
     .font(.title2)
