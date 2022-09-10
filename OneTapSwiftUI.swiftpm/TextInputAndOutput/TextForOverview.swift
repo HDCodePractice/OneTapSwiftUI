@@ -9,8 +9,6 @@ struct TextForOverview: View {
         TextCombining()
         Divider()
         TextForFontList()
-        Divider()
-        
     }
 }
 

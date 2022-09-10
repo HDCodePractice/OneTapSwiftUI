@@ -34,6 +34,9 @@ struct Sidebar: View {
                 NavigationLink("ZStack"){
                     ZStackControlView()
                 }
+                NavigationLink("Divider"){
+                    DividerControlView()
+                }
             }
             
             Section("Animations"){
