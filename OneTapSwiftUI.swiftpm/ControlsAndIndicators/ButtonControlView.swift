@@ -9,9 +9,15 @@ struct ButtonControlView: View {
                     url: "https://developer.apple.com/documentation/swiftui/button",
                     description: "A control that initiates an action."
                 )
-                ButtonViewCode()
+                SimpleButtonView()
+                Divider()
+                ButtonRoleView()
+                Divider()
+                ButtonStyleView()
                 Divider()
                 ButtonStyleSample()
+                Divider()
+                ButtonBorderShapView()
             }
             .padding()
         }
@@ -72,73 +78,162 @@ struct ButtonStyleSample: View {
 """
     
     var body: some View {
+        Text("Custom ButtonStyle")
+            .font(.title2)
         CodePreviewView(code: code)
         Button("Custom ButtonStyle"){}
             .buttonStyle(MyButtonStyle(bgColor: .accentColor))
     }
 }
 
-private struct ButtonViewCode: View {
+private struct SimpleButtonView: View {
     var code = """
-struct ButtonViewCode: View {
-        @State var tapMessage = "Tap a Button"
-    var body: some View {
-        Text( tapMessage )
-        HStack{
-            Button("Button1"){
-                tapMessage = "Button1"
-            }.buttonStyle(.borderedProminent)
-            Button {
-                tapMessage = "Button2"
-            } label: {
-                Label("Button2",systemImage: "2.circle")
-            }.buttonStyle(.borderedProminent)
-        }
-            HStack{
-                Button("Delete Role", role: .destructive) { tapMessage = "Delete Role" }.buttonStyle(.borderedProminent)
-                Button("Cancel Role", role: .cancel) { tapMessage = "Cancel Role" }.buttonStyle(.borderedProminent)
-            }
-            HStack{
-                Button("automatic") { tapMessage = "automatic" }.buttonStyle(.automatic)
-                Button("bordered") { tapMessage = "bordered" }.buttonStyle(.bordered)
-            }
-            HStack{
-                Button("borderedProminent") { tapMessage = "borderedProminent" }.buttonStyle(.borderedProminent)
-                Button("borderless") { tapMessage = "borderless" }.buttonStyle(.borderless)
-            }
-    }
+Button("Button1"){
+    tapMessage = "Button1"
+}
+Button {
+    tapMessage = "Button2"
+} label: {
+    Label("Button2",systemImage: "2.circle")
 }
 """
     @State var tapMessage = "Tap a Button"
     var body: some View {
-        CodePreviewView(code: code)
         VStack{
-            Text( tapMessage )
+            Text("Text and Label Button")
+                .font(.title2)
+            CodePreviewView(code: code)
             HStack{
                 Button("Button1"){
                     tapMessage = "Button1"
-                }.buttonStyle(.borderedProminent)
+                }
                 Button {
                     tapMessage = "Button2"
                 } label: {
                     Label("Button2",systemImage: "2.circle")
-                }.buttonStyle(.borderedProminent)
-            }
-            HStack{
-                Button("Delete Role", role: .destructive) { tapMessage = "Delete Role" }.buttonStyle(.borderedProminent)
-                Button("Cancel Role", role: .cancel) { tapMessage = "Cancel Role" }.buttonStyle(.borderedProminent)
-            }
-            HStack{
-                Button("automatic") { tapMessage = "automatic" }.buttonStyle(.automatic)
-                Button("bordered") { tapMessage = "bordered" }.buttonStyle(.bordered)
-            }
-            HStack{
-                Button("borderedProminent") { tapMessage = "borderedProminent" }.buttonStyle(.borderedProminent)
-                Button("borderless") { tapMessage = "borderless" }.buttonStyle(.borderless)
+                }
             }
         }
-        .padding()
-        .border(.black)
+    }
+}
+
+private struct ButtonBorderShapView: View {
+    var code = """
+Button("automatic"){
+    tapMessage = "automatic"
+}
+.buttonStyle(.borderedProminent)
+.buttonBorderShape(.automatic)
+Button("capsule"){
+    tapMessage = "capsule"
+}
+.buttonStyle(.borderedProminent)
+.buttonBorderShape(.capsule)
+Button("roundedRectangle"){
+    tapMessage = "roundedRectangle"
+}
+.buttonStyle(.borderedProminent)
+.buttonBorderShape(.roundedRectangle)
+Button("roundedRectangle(radius)"){
+    tapMessage = "roundedRectangle(radius)"
+}
+.buttonStyle(.borderedProminent)
+.buttonBorderShape(.roundedRectangle(radius: 20))
+"""
+    @State var tapMessage = "Tap a Button"
+    var body: some View {
+        VStack{
+            Text("buttonBorderShape")
+                .font(.title2)
+            CodePreviewView(code: code)
+            Text( "You taped: \(tapMessage)" )
+            HStack{
+                Button("automatic"){
+                    tapMessage = "automatic"
+                }
+                .buttonStyle(.borderedProminent)
+                .buttonBorderShape(.automatic)
+                Button("capsule"){
+                    tapMessage = "capsule"
+                }
+                .buttonStyle(.borderedProminent)
+                .buttonBorderShape(.capsule)
+            }
+            HStack{
+                Button("roundedRectangle"){
+                    tapMessage = "roundedRectangle"
+                }
+                .buttonStyle(.borderedProminent)
+                .buttonBorderShape(.roundedRectangle)
+                Button("roundedRectangle(radius)"){
+                    tapMessage = "roundedRectangle(radius)"
+                }
+                .buttonStyle(.borderedProminent)
+                .buttonBorderShape(.roundedRectangle(radius: 20))
+            }
+        }
+    }
+}
+
+private struct ButtonRoleView: View {
+    var code = """
+Button("Delete Role", role: .destructive) {
+    tapMessage = "Delete Role"
+}
+Button("Cancel Role", role: .cancel) {
+    tapMessage = "Cancel Role"
+}
+"""
+    @State var tapMessage = "Tap a Button"
+    var body: some View {
+        VStack{
+            Text("Button Role")
+                .font(.title2)
+            CodePreviewView(code: code)
+            Text( "You taped: \(tapMessage)" )
+            HStack{
+                Button("Delete Role", role: .destructive) {
+                    tapMessage = "Delete Role"
+                }
+                Button("Cancel Role", role: .cancel) {
+                    tapMessage = "Cancel Role"
+                }
+            }
+        }
+    }
+}
+
+private struct ButtonStyleView: View {
+    var code = """
+Button("automatic") { tapMessage = "automatic Style" }
+    .buttonStyle(.automatic)
+Button("bordered") { tapMessage = "bordered" }
+    .buttonStyle(.bordered)
+Button("borderedProminent") { tapMessage = "borderedProminent" }
+    .buttonStyle(.borderedProminent)
+Button("borderless") { tapMessage = "borderless" }
+    .buttonStyle(.borderless)
+"""
+    @State var tapMessage = "Tap a Button"
+    var body: some View {
+        VStack{
+            Text("Button Style")
+                .font(.title2)
+            CodePreviewView(code: code)
+            Text( "You taped: \(tapMessage)" )
+            HStack{
+                Button("automatic") { tapMessage = "automatic Style" }
+                    .buttonStyle(.automatic)
+                Button("bordered") { tapMessage = "bordered" }
+                    .buttonStyle(.bordered)
+            }
+            HStack{
+                Button("borderedProminent") { tapMessage = "borderedProminent" }
+                    .buttonStyle(.borderedProminent)
+                Button("borderless") { tapMessage = "borderless" }
+                    .buttonStyle(.borderless)
+            }
+        }
     }
 }
 
