@@ -48,6 +48,12 @@ struct Sidebar: View {
                 }
             }
             
+            Section("Input and event modifiers"){
+                NavigationLink("Keyboard shortcuts"){
+                    KeyboardShortcutsControlView()
+                }
+            }
+            
             Section("Map"){
                 NavigationLink("Map"){
                     MapControlView()
