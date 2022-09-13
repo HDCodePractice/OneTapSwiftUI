@@ -9,9 +9,7 @@ struct HeadlineView: View {
             HStack{
                 Text(title)
                     .font(.largeTitle)
-                Link(destination: URL(string: url)!) { 
-                    Image(systemName: "link")
-                }
+                LinkView(url: url)
                 Spacer()
             }
             Text(description)
