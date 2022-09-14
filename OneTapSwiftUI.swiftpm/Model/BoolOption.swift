@@ -12,12 +12,14 @@ struct BoolOption: Identifiable{
     }
     var value: Bool
     var defaultValue : Bool
+    var isOption = false
     
     init(
         name: String, 
         active:Bool=false, 
         value:Bool, 
-        defaultValue: Bool? = nil
+        defaultValue: Bool? = nil,
+        isOption : Bool = false
     ){
         self.name = name
         self.active = active
@@ -27,6 +29,7 @@ struct BoolOption: Identifiable{
         }else{
             self.defaultValue=value
         }
+        self.isOption = isOption
     }
     
     var valueString : String{

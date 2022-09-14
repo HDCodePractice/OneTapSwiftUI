@@ -1,6 +1,6 @@
 import SwiftUI
 
-struct AnimatableView: View {
+struct AnimatableControlView: View {
     var body: some View {
         ScrollView{
             VStack{
@@ -191,8 +191,8 @@ private struct AnimationRoundedRectangle: View, Animatable {
     }
 }
 
-struct AnimatableView_Previews: PreviewProvider {
+struct AnimatableControlView_Previews: PreviewProvider {
     static var previews: some View {
-        AnimatableView()
+        AnimatableControlView()
     }
 }
