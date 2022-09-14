@@ -42,7 +42,7 @@ struct GameControlSampleView: View {
                     .rotationEffect(.degrees(degress))
             }
             .frame(width: 300,height: 300)
-            .border(.black)
+            .border(.primary)
             HStack{
                 Button("⬅️"){
                     withAnimation {
@@ -97,7 +97,7 @@ struct GameControlSampleView: View {
                     .rotationEffect(.degrees(degress))
             }
             .frame(width: 300,height: 300)
-            .border(.black)
+            .border(.primary)
             HStack{
                 Button("⬅️"){
                     withAnimation {

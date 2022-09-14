@@ -63,7 +63,7 @@ VStack{
             
             }
         }
-        .border(.black)
+        .border(.primary)
         .padding()
     }
 }

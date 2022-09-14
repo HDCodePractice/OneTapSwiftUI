@@ -41,7 +41,7 @@ Text("This is a multiline Text alighnment on center test.This is a multiline Tex
                 Text("This is a multiline Text alighnment on center test.This is a multiline Text alighnment on center test.")
                     .multilineTextAlignment(.trailing)
             }
-            .border(.black)
+            .border(.primary)
         }
     }
 }
