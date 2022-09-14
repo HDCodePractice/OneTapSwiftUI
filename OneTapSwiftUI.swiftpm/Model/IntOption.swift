@@ -13,13 +13,15 @@ struct IntOption: Identifiable{
     var value: Int
     var defaultValue : Int
     var range: ClosedRange<Double>
+    var isOption = false
     
     init(
         name: String, 
         active:Bool=false, 
         value:Int, 
         defaultValue: Int? = nil,
-        range: ClosedRange<Double> 
+        range: ClosedRange<Double>,
+        isOption : Bool = false
     ){
         self.name = name
         self.active = active
@@ -30,6 +32,7 @@ struct IntOption: Identifiable{
             self.defaultValue=value
         }
         self.range = range
+        self.isOption = isOption
     }
     
     var doubleValue : Double{

@@ -44,7 +44,7 @@ struct Sidebar: View {
                     WithAnimationControlView()
                 }
                 NavigationLink("Animatable"){
-                    AnimatableView()
+                    AnimatableControlView()
                 }
             }
             
