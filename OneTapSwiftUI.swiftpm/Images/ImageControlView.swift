@@ -2,8 +2,8 @@ import SwiftUI
 
 struct ImageControlView: View {
     var body: some View {
-        ScrollView{
-            VStack{
+        ScrollView {
+            VStack {
                 HeadlineView(
                     title: "Image",
                     url: "https://developer.apple.com/documentation/swiftui/image",
@@ -20,7 +20,7 @@ struct ImageControlView: View {
 }
 
 private struct ImageModifierView: View {
-    var code : String {
+    var code: String {
         var viewCode = "Image(\"OneTapSwiftUI-small\")"
         if isResizable.value {
             viewCode += "\n .resizable()"
@@ -34,26 +34,26 @@ private struct ImageModifierView: View {
         viewCode += "\n .frame(width: 200,height: 300)\n .border(.primary)"
         return viewCode
     }
-    
+
     @State var isResizable = OptionOption(name: "resizable", active: false)
     @State var isScaledToFit = OptionOption(name: "scaledToFit", active: false)
     @State var isScaledToFill = OptionOption(name: "scaledToFill", active: false)
     var body: some View {
-        VStack{
+        VStack {
             Text("Image Modifier")
                 .font(.title2)
             CodePreviewView(code: code)
             Image("OneTapSwiftUI-small")
-                .if( isResizable.value ){
+                .if(isResizable.value) {
                     $0.resizable()
                 }
-                .if(isScaledToFit.value){
+                .if(isScaledToFit.value) {
                     $0.scaledToFit()
                 }
-                .if(isScaledToFill.value){
+                .if(isScaledToFill.value) {
                     $0.scaledToFill()
                 }
-                .frame(width: 200,height: 300)
+                .frame(width: 200, height: 300)
                 .border(.primary)
             OptionOptionView(option: $isResizable)
             OptionOptionView(option: $isScaledToFit)
@@ -64,19 +64,22 @@ private struct ImageModifierView: View {
 
 private struct CreateImageView: View {
     var code = """
-Image("OneTapSwiftUI",label: Text("OneTapSwiftUI Image"))
-    .resizable()
-    .scaledToFit()
-    .frame(width: 100)
-Image(systemName: "sun.max")
-    .resizable()
-    .scaledToFit()
-    .frame(width: 100)
-"""
+    Image("OneTapSwiftUI")
+        .resizable()
+        .scaledToFit()
+        .frame(width: 100)
+    Image(systemName: "sun.max")
+        .resizable()
+        .scaledToFit()
+        .frame(width: 100)
+    if let cgImage = UIImage(named: "OneTapSwiftUI")?.cgImage{
+        Image(decorative: cgImage,scale: 1.0,orientation: .up)
+    }
+    """
     var body: some View {
-        Text("Creating an image from assets and SFSymbol")
+        Text("Creating an image")
         CodePreviewView(code: code)
-        Image("OneTapSwiftUI",label: Text("OneTapSwiftUI Image"))
+        Image("OneTapSwiftUI")
             .resizable()
             .scaledToFit()
             .frame(width: 100)
@@ -84,6 +87,12 @@ Image(systemName: "sun.max")
             .resizable()
             .scaledToFit()
             .frame(width: 100)
+        if let cgImage = UIImage(named: "OneTapSwiftUI")?.cgImage {
+            Image(decorative: cgImage, scale: 1.0, orientation: .up)
+                .resizable()
+                .scaledToFit()
+                .frame(width: 100)
+        }
     }
 }
 
@@ -92,4 +101,3 @@ struct ImageControlView_Previews: PreviewProvider {
         ImageControlView()
     }
 }
-
