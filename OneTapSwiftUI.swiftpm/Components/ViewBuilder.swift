@@ -14,7 +14,22 @@ extension View {
         then modifierT: (Self) -> T,
         else modifierU: (Self) -> U
     ) -> some View {
-        if condition { modifierT(self) }
-        else { modifierU(self) }
+        if condition {
+            modifierT(self)
+        } else {
+            modifierU(self)
+        }
+    }
+
+    @ViewBuilder
+    public func `if`<T: View>(
+        _ condition: Bool,
+        then modifierT: (Self) -> T
+    ) -> some View {
+        if condition {
+            modifierT(self)
+        } else {
+            self
+        }
     }
 }

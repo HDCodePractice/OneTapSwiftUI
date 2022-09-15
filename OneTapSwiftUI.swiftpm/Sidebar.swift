@@ -18,6 +18,12 @@ struct Sidebar: View {
                 }
             }
             
+            Section("Images"){
+                NavigationLink("Image"){
+                    ImageControlView()
+                }
+            }
+            
             Section("Controls and indicators"){
                 NavigationLink("Button"){
                     ButtonControlView()

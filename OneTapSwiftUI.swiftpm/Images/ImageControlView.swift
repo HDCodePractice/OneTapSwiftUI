@@ -1,30 +1,80 @@
 import SwiftUI
 
-
-
 struct ImageControlView: View {
     var body: some View {
-        VStack{
-            HeadlineView(
-                title: "Image", 
-                url: "https://developer.apple.com/documentation/swiftui/image", 
-                description: "A view that displays an image."
-            )
-            ImageViewCode()
+        ScrollView{
+            VStack{
+                HeadlineView(
+                    title: "Image",
+                    url: "https://developer.apple.com/documentation/swiftui/image",
+                    description: "A view that displays an image."
+                )
+                CreateImageView()
+                Divider()
+                ImageModifierView()
+                Divider()
+            }
+            .padding()
         }
     }
 }
 
-private struct ImageViewCode: View {
+private struct ImageModifierView: View {
+    var code : String {
+        var viewCode = "Image(\"OneTapSwiftUI-small\")"
+        if isResizable.value {
+            viewCode += "\n .resizable()"
+        }
+        if isScaledToFit.value {
+            viewCode += "\n .scaledToFit()"
+        }
+        if isScaledToFill.value {
+            viewCode += "\n .scaledToFill()"
+        }
+        viewCode += "\n .frame(width: 200,height: 300)\n .border(.primary)"
+        return viewCode
+    }
+    
+    @State var isResizable = OptionOption(name: "resizable", active: false)
+    @State var isScaledToFit = OptionOption(name: "scaledToFit", active: false)
+    @State var isScaledToFill = OptionOption(name: "scaledToFill", active: false)
+    var body: some View {
+        VStack{
+            Text("Image Modifier")
+                .font(.title2)
+            CodePreviewView(code: code)
+            Image("OneTapSwiftUI-small")
+                .if( isResizable.value ){
+                    $0.resizable()
+                }
+                .if(isScaledToFit.value){
+                    $0.scaledToFit()
+                }
+                .if(isScaledToFill.value){
+                    $0.scaledToFill()
+                }
+                .frame(width: 200,height: 300)
+                .border(.primary)
+            OptionOptionView(option: $isResizable)
+            OptionOptionView(option: $isScaledToFit)
+            OptionOptionView(option: $isScaledToFill)
+        }
+    }
+}
+
+private struct CreateImageView: View {
     var code = """
+Image("OneTapSwiftUI",label: Text("OneTapSwiftUI Image"))
+    .resizable()
+    .scaledToFit()
+    .frame(width: 100)
 Image(systemName: "sun.max")
     .resizable()
-    .aspectRatio(contentMode: .fit)
-Text("sun")
-    .font(.largeTitle)
+    .scaledToFit()
+    .frame(width: 100)
 """
     var body: some View {
-        Text("Creating an image")
+        Text("Creating an image from assets and SFSymbol")
         CodePreviewView(code: code)
         Image("OneTapSwiftUI",label: Text("OneTapSwiftUI Image"))
             .resizable()
@@ -34,22 +84,6 @@ Text("sun")
             .resizable()
             .scaledToFit()
             .frame(width: 100)
-        if #available(iOS 16.0, *) {
-            let mySize = CGSize(width: 200, height: 200)
-            Image(size: mySize) { context in
-                context.fill(
-                    Path(
-                        ellipseIn: CGRect(origin: .zero, size: mySize)),
-                    with: .linearGradient(
-                        Gradient(colors: [.yellow, .orange]),
-                        startPoint: .zero,
-                        endPoint: CGPoint(x: mySize.width, y:mySize.height))
-                )
-            }
-            .resizable()
-            .scaledToFit()
-            .frame(width: 100)
-        }
     }
 }
 
