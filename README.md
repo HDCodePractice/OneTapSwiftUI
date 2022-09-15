@@ -15,4 +15,5 @@ SwiftUI一点通，您现在可以通过[TestFlight下载App](https://testflight
 ### 运行
 
 - 你可以通过[TestFlight下载测试版本](https://testflight.apple.com/join/smdKSsBL)
-- 也可以使用Swift Playgrounds打开swiftpm来查看和运行
+- 也可以使用Swift Playgrounds或Xcode打开swiftpm来查看和运行
+
