@@ -14,7 +14,6 @@ struct VStackControlView: View {
             }
             .padding()
         }
-        .padding()
     }
 }
 

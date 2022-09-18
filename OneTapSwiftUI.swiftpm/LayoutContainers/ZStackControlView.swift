@@ -15,7 +15,7 @@ struct ZStackControlView: View {
                 Divider()
             }
             .padding()
-        }.padding()
+        }
     }
 }
 

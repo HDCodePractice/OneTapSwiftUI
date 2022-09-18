@@ -16,7 +16,7 @@ struct MapControlView: View {
                 Divider()
             }
             .padding()
-        }.padding()
+        }
     }
 }
 

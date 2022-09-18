@@ -14,7 +14,7 @@ struct WithAnimationControlView: View {
                 MutiWithAnimationView()
             }
             .padding()
-        }.padding()
+        }
     }
 }
 

@@ -25,7 +25,6 @@ struct ButtonControlView: View {
             }
             .padding()
         }
-        .padding()
     }
 }
 

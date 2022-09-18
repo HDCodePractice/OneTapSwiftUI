@@ -17,7 +17,7 @@ struct AppStorageControlView: View {
                 Divider()
             }
             .padding()
-        }.padding()
+        }
     }
 }
 

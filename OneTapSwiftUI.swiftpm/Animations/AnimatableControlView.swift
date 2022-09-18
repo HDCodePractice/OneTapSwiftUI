@@ -14,7 +14,7 @@ struct AnimatableControlView: View {
                 AnimationColorChangeView()
             }
             .padding()
-        }.padding()
+        }
     }
 }
 
