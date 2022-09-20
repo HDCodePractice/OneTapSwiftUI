@@ -1,0 +1,14 @@
+{
+  "pins" : [
+    {
+      "identity" : "swiftuitapspackage",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/HDCodePractice/SwiftUITapsPackage",
+      "state" : {
+        "revision" : "4e0f8fd9c5f52d5d483b20720b38e8ecbe3ee8e9",
+        "version" : "1.0.5"
+      }
+    }
+  ],
+  "version" : 2
+}
