@@ -1,10 +1,11 @@
 import SwiftUI
+import SwiftUITapsPackage
 
 struct ContentView: View {
     var body: some View {
         NavigationView{
             Sidebar()
-            TextControlView()
+            Text("")
         }
         .navigationViewStyle(.columns)
         .navigationTitle("")

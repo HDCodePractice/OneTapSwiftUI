@@ -38,9 +38,15 @@ let package = Package(
             appCategory: .developerTools
         )
     ],
+    dependencies: [
+        .package(url: "https://github.com/HDCodePractice/SwiftUITapsPackage", "1.0.4"..<"2.0.0")
+    ],
     targets: [
         .executableTarget(
             name: "AppModule",
+            dependencies: [
+                .product(name: "SwiftUITapsPackage", package: "SwiftUITapsPackage")
+            ],
             path: "."
         )
     ]
