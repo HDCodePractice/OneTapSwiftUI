@@ -9,6 +9,10 @@ SwiftUI一点通，您现在可以通过[TestFlight下载App](https://testflight
 - 每个Tap应该将不同的使用方式尽可能的展现出来，比如init时的参数以及常用的modifier，参见[VStackControlView.swift](https://github.com/HDCodePractice/SwiftUITapsPackage/blob/main/Sources/SwiftUITapsPackage/LayoutContainers/VStackControlView.swift)
 - 每个Tap如果你有了很不同的使用方式，欢迎增加不同的乐趣代码参见[ZStackDiceView.swift](https://github.com/HDCodePractice/SwiftUITapsPackage/blob/main/Sources/SwiftUITapsPackage/LayoutContainers/ZStackDiceView.swift)
 
+*注意事项*：
+
+- Swift Playgrounds 4.1 还不支持SwiftUI 4.0 所以请使用 Xcode 14以上版本使用swiftpm
+
 ### 项目所使用的公用组件
 
 所有的公用View组件均在Components文件夹下，所有公用Model均在Model文件夹下。
