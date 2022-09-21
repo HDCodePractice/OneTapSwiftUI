@@ -7,100 +7,96 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		676A13B528D4A21A000A229E /* OneTapSwiftUIAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 676A13B428D4A21A000A229E /* OneTapSwiftUIAppApp.swift */; };
-		676A13B728D4A21A000A229E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 676A13B628D4A21A000A229E /* ContentView.swift */; };
-		676A13B928D4A21B000A229E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 676A13B828D4A21B000A229E /* Assets.xcassets */; };
-		676A13BD28D4A21B000A229E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 676A13BC28D4A21B000A229E /* Preview Assets.xcassets */; };
-		677E43B928D4AE850037826B /* SwiftUITapsPackage in Frameworks */ = {isa = PBXBuildFile; productRef = 677E43B828D4AE850037826B /* SwiftUITapsPackage */; };
+		674CA9F828DB73C90058DF03 /* SwiftUITapsPackage in Frameworks */ = {isa = PBXBuildFile; productRef = 674CA9F728DB73C90058DF03 /* SwiftUITapsPackage */; };
+		676D435128DB5B940038E8A9 /* OneTapSwiftUIAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 676D435028DB5B940038E8A9 /* OneTapSwiftUIAppApp.swift */; };
+		676D435328DB5B940038E8A9 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 676D435228DB5B940038E8A9 /* ContentView.swift */; };
+		676D435528DB5B940038E8A9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 676D435428DB5B940038E8A9 /* Assets.xcassets */; };
+		676D435828DB5B940038E8A9 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 676D435728DB5B940038E8A9 /* Preview Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		675F98AC28D611C00075E284 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
-		676A13B128D4A21A000A229E /* OneTapSwiftUIApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OneTapSwiftUIApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		676A13B428D4A21A000A229E /* OneTapSwiftUIAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OneTapSwiftUIAppApp.swift; sourceTree = "<group>"; };
-		676A13B628D4A21A000A229E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		676A13B828D4A21B000A229E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		676A13BA28D4A21B000A229E /* OneTapSwiftUIApp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = OneTapSwiftUIApp.entitlements; sourceTree = "<group>"; };
-		676A13BC28D4A21B000A229E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		676A13C428D4A277000A229E /* SwiftUITapsPackage */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = SwiftUITapsPackage; path = ../../SwiftUITapsPackage; sourceTree = "<group>"; };
+		674CA9F628DB73A60058DF03 /* SwiftUITapsPackage */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = SwiftUITapsPackage; path = ../../SwiftUITapsPackage; sourceTree = "<group>"; };
+		676D434D28DB5B940038E8A9 /* OneTapSwiftUIApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OneTapSwiftUIApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		676D435028DB5B940038E8A9 /* OneTapSwiftUIAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OneTapSwiftUIAppApp.swift; sourceTree = "<group>"; };
+		676D435228DB5B940038E8A9 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		676D435428DB5B940038E8A9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		676D435728DB5B940038E8A9 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		676A13AE28D4A21A000A229E /* Frameworks */ = {
+		676D434A28DB5B940038E8A9 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				677E43B928D4AE850037826B /* SwiftUITapsPackage in Frameworks */,
+				674CA9F828DB73C90058DF03 /* SwiftUITapsPackage in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		676A13A828D4A21A000A229E = {
-			isa = PBXGroup;
-			children = (
-				676A13C328D4A277000A229E /* Packages */,
-				676A13B328D4A21A000A229E /* OneTapSwiftUIApp */,
-				676A13B228D4A21A000A229E /* Products */,
-				677E43B728D4AE850037826B /* Frameworks */,
-			);
-			sourceTree = "<group>";
-		};
-		676A13B228D4A21A000A229E /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				676A13B128D4A21A000A229E /* OneTapSwiftUIApp.app */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		676A13B328D4A21A000A229E /* OneTapSwiftUIApp */ = {
-			isa = PBXGroup;
-			children = (
-				675F98AC28D611C00075E284 /* Info.plist */,
-				676A13B428D4A21A000A229E /* OneTapSwiftUIAppApp.swift */,
-				676A13B628D4A21A000A229E /* ContentView.swift */,
-				676A13B828D4A21B000A229E /* Assets.xcassets */,
-				676A13BA28D4A21B000A229E /* OneTapSwiftUIApp.entitlements */,
-				676A13BB28D4A21B000A229E /* Preview Content */,
-			);
-			path = OneTapSwiftUIApp;
-			sourceTree = "<group>";
-		};
-		676A13BB28D4A21B000A229E /* Preview Content */ = {
-			isa = PBXGroup;
-			children = (
-				676A13BC28D4A21B000A229E /* Preview Assets.xcassets */,
-			);
-			path = "Preview Content";
-			sourceTree = "<group>";
-		};
-		676A13C328D4A277000A229E /* Packages */ = {
-			isa = PBXGroup;
-			children = (
-				676A13C428D4A277000A229E /* SwiftUITapsPackage */,
-			);
-			name = Packages;
-			sourceTree = "<group>";
-		};
-		677E43B728D4AE850037826B /* Frameworks */ = {
+		674CA9F128DB70D30058DF03 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		674CA9F528DB73A60058DF03 /* Packages */ = {
+			isa = PBXGroup;
+			children = (
+				674CA9F628DB73A60058DF03 /* SwiftUITapsPackage */,
+			);
+			name = Packages;
+			sourceTree = "<group>";
+		};
+		676D434428DB5B940038E8A9 = {
+			isa = PBXGroup;
+			children = (
+				674CA9F528DB73A60058DF03 /* Packages */,
+				676D434F28DB5B940038E8A9 /* OneTapSwiftUIApp */,
+				676D434E28DB5B940038E8A9 /* Products */,
+				674CA9F128DB70D30058DF03 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		676D434E28DB5B940038E8A9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				676D434D28DB5B940038E8A9 /* OneTapSwiftUIApp.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		676D434F28DB5B940038E8A9 /* OneTapSwiftUIApp */ = {
+			isa = PBXGroup;
+			children = (
+				676D435028DB5B940038E8A9 /* OneTapSwiftUIAppApp.swift */,
+				676D435228DB5B940038E8A9 /* ContentView.swift */,
+				676D435428DB5B940038E8A9 /* Assets.xcassets */,
+				676D435628DB5B940038E8A9 /* Preview Content */,
+			);
+			path = OneTapSwiftUIApp;
+			sourceTree = "<group>";
+		};
+		676D435628DB5B940038E8A9 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				676D435728DB5B940038E8A9 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		676A13B028D4A21A000A229E /* OneTapSwiftUIApp */ = {
+		676D434C28DB5B940038E8A9 /* OneTapSwiftUIApp */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 676A13C028D4A21B000A229E /* Build configuration list for PBXNativeTarget "OneTapSwiftUIApp" */;
+			buildConfigurationList = 676D435B28DB5B940038E8A9 /* Build configuration list for PBXNativeTarget "OneTapSwiftUIApp" */;
 			buildPhases = (
-				676A13AD28D4A21A000A229E /* Sources */,
-				676A13AE28D4A21A000A229E /* Frameworks */,
-				676A13AF28D4A21A000A229E /* Resources */,
+				676D434928DB5B940038E8A9 /* Sources */,
+				676D434A28DB5B940038E8A9 /* Frameworks */,
+				676D434B28DB5B940038E8A9 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -108,28 +104,28 @@
 			);
 			name = OneTapSwiftUIApp;
 			packageProductDependencies = (
-				677E43B828D4AE850037826B /* SwiftUITapsPackage */,
+				674CA9F728DB73C90058DF03 /* SwiftUITapsPackage */,
 			);
 			productName = OneTapSwiftUIApp;
-			productReference = 676A13B128D4A21A000A229E /* OneTapSwiftUIApp.app */;
+			productReference = 676D434D28DB5B940038E8A9 /* OneTapSwiftUIApp.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		676A13A928D4A21A000A229E /* Project object */ = {
+		676D434528DB5B940038E8A9 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1400;
 				LastUpgradeCheck = 1400;
 				TargetAttributes = {
-					676A13B028D4A21A000A229E = {
+					676D434C28DB5B940038E8A9 = {
 						CreatedOnToolsVersion = 14.0;
 					};
 				};
 			};
-			buildConfigurationList = 676A13AC28D4A21A000A229E /* Build configuration list for PBXProject "OneTapSwiftUIApp" */;
+			buildConfigurationList = 676D434828DB5B940038E8A9 /* Build configuration list for PBXProject "OneTapSwiftUIApp" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -138,42 +134,42 @@
 				Base,
 				"zh-Hans",
 			);
-			mainGroup = 676A13A828D4A21A000A229E;
-			productRefGroup = 676A13B228D4A21A000A229E /* Products */;
+			mainGroup = 676D434428DB5B940038E8A9;
+			productRefGroup = 676D434E28DB5B940038E8A9 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				676A13B028D4A21A000A229E /* OneTapSwiftUIApp */,
+				676D434C28DB5B940038E8A9 /* OneTapSwiftUIApp */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		676A13AF28D4A21A000A229E /* Resources */ = {
+		676D434B28DB5B940038E8A9 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				676A13BD28D4A21B000A229E /* Preview Assets.xcassets in Resources */,
-				676A13B928D4A21B000A229E /* Assets.xcassets in Resources */,
+				676D435828DB5B940038E8A9 /* Preview Assets.xcassets in Resources */,
+				676D435528DB5B940038E8A9 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		676A13AD28D4A21A000A229E /* Sources */ = {
+		676D434928DB5B940038E8A9 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				676A13B728D4A21A000A229E /* ContentView.swift in Sources */,
-				676A13B528D4A21A000A229E /* OneTapSwiftUIAppApp.swift in Sources */,
+				676D435328DB5B940038E8A9 /* ContentView.swift in Sources */,
+				676D435128DB5B940038E8A9 /* OneTapSwiftUIAppApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		676A13BE28D4A21B000A229E /* Debug */ = {
+		676D435928DB5B940038E8A9 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -224,16 +220,16 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
-				MACOSX_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
-		676A13BF28D4A21B000A229E /* Release */ = {
+		676D435A28DB5B940038E8A9 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -278,96 +274,73 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
-				MACOSX_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
 		};
-		676A13C128D4A21B000A229E /* Debug */ = {
+		676D435C28DB5B940038E8A9 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = OneTapSwiftUIApp/OneTapSwiftUIApp.entitlements;
-				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"OneTapSwiftUIApp/Preview Content\"";
 				DEVELOPMENT_TEAM = T4W3MN6QHA;
-				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = OneTapSwiftUIApp/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = "One Tap SwiftUI";
-				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.education";
-				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "We want to use Location in Map View show case";
-				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
-				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
-				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
-				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
-				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
-				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
-				INFOPLIST_KEY_UIStatusBarStyle = "";
-				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
-				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.developer-tools";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
-				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
-				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = one.hdcola.onetapswiftui;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
-		676A13C228D4A21B000A229E /* Release */ = {
+		676D435D28DB5B940038E8A9 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = OneTapSwiftUIApp/OneTapSwiftUIApp.entitlements;
-				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"OneTapSwiftUIApp/Preview Content\"";
 				DEVELOPMENT_TEAM = T4W3MN6QHA;
-				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = OneTapSwiftUIApp/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = "One Tap SwiftUI";
-				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.education";
-				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "We want to use Location in Map View show case";
-				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
-				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
-				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
-				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
-				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
-				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
-				INFOPLIST_KEY_UIStatusBarStyle = "";
-				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
-				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.developer-tools";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
-				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
-				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = one.hdcola.onetapswiftui;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -377,20 +350,20 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		676A13AC28D4A21A000A229E /* Build configuration list for PBXProject "OneTapSwiftUIApp" */ = {
+		676D434828DB5B940038E8A9 /* Build configuration list for PBXProject "OneTapSwiftUIApp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				676A13BE28D4A21B000A229E /* Debug */,
-				676A13BF28D4A21B000A229E /* Release */,
+				676D435928DB5B940038E8A9 /* Debug */,
+				676D435A28DB5B940038E8A9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		676A13C028D4A21B000A229E /* Build configuration list for PBXNativeTarget "OneTapSwiftUIApp" */ = {
+		676D435B28DB5B940038E8A9 /* Build configuration list for PBXNativeTarget "OneTapSwiftUIApp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				676A13C128D4A21B000A229E /* Debug */,
-				676A13C228D4A21B000A229E /* Release */,
+				676D435C28DB5B940038E8A9 /* Debug */,
+				676D435D28DB5B940038E8A9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -398,11 +371,11 @@
 /* End XCConfigurationList section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		677E43B828D4AE850037826B /* SwiftUITapsPackage */ = {
+		674CA9F728DB73C90058DF03 /* SwiftUITapsPackage */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = SwiftUITapsPackage;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
-	rootObject = 676A13A928D4A21A000A229E /* Project object */;
+	rootObject = 676D434528DB5B940038E8A9 /* Project object */;
 }

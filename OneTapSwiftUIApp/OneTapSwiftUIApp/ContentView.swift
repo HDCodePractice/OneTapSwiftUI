@@ -2,7 +2,7 @@
 //  ContentView.swift
 //  OneTapSwiftUIApp
 //
-//  Created by 老房东 on 2022-09-16.
+//  Created by 老房东 on 2022-09-21.
 //
 
 import SwiftUI
@@ -17,11 +17,5 @@ struct ContentView: View {
         .navigationViewStyle(.columns)
         .navigationTitle("")
         .navigationBarHidden(true)
-    }
-}
-
-struct ContentView_Previews: PreviewProvider {
-    static var previews: some View {
-        ContentView()
     }
 }
