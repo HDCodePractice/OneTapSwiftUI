@@ -10,7 +10,7 @@ import SwiftUITapsPackage
 
 struct ContentView: View {
     var body: some View {
-        NavigationView{
+        NavigationView {
             Sidebar()
             Text("")
         }
