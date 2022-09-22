@@ -9,9 +9,22 @@ SwiftUI一点通，您现在可以通过[TestFlight下载App](https://testflight
 - 每个Tap应该将不同的使用方式尽可能的展现出来，比如init时的参数以及常用的modifier，参见[VStackControlView.swift](https://github.com/HDCodePractice/SwiftUITapsPackage/blob/main/Sources/SwiftUITapsPackage/LayoutContainers/VStackControlView.swift)
 - 每个Tap如果你有了很不同的使用方式，欢迎增加不同的乐趣代码参见[ZStackDiceView.swift](https://github.com/HDCodePractice/SwiftUITapsPackage/blob/main/Sources/SwiftUITapsPackage/LayoutContainers/ZStackDiceView.swift)
 
-*注意事项*：
 
-- Swift Playgrounds 4.1 还不支持SwiftUI 4.0 所以请使用 Xcode 14以上版本使用swiftpm
+## 开发一个Tap
+
+### 使用Xcode Project
+
+- clone [OneTapSwiftUI](https://github.com/HDCodePractice/OneTapSwiftUI) 和 [](https://github.com/HDCodePractice/SwiftUITapsPackage) 到同一个目录中
+- 使用Xcode打开OneTapSwiftUI项目中的OneTapSwiftUIApp目录里的xcodeproj
+
+### 使用 swiftpm
+
+*注意事项*：Swift Playgrounds 4.1 还不支持SwiftUI 4.0 所以请使用 Xcode 14以上版本使用swiftpm
+
+- clone [OneTapSwiftUI](https://github.com/HDCodePractice/OneTapSwiftUI)
+- 使用Xcode打开swiftpm
+- 你可以在swiftpm里完成新Tap的开发，我会帮你将新的Tap加入到Package中去的
+- 在swiftpm中开发时，你需要显式的 `import SwiftUITapsPackage` 后就可以使用 `Components`和`Model`中的一系列组件了
 
 ### 项目所使用的公用组件
 
