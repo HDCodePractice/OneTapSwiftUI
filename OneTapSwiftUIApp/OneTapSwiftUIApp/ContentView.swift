@@ -19,3 +19,10 @@ struct ContentView: View {
         .navigationBarHidden(true)
     }
 }
+
+
+struct ContentView_Previews: PreviewProvider {
+    static var previews: some View {
+        ContentView()
+    }
+}
