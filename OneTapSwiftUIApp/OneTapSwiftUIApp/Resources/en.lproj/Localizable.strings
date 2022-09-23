@@ -1,459 +1,457 @@
-/* No comment provided by engineer. */
-"" = "";
-
-/* No comment provided by engineer. */
+// No comment provided by engineer.
+// No comment provided by engineer.
 "-" = "-";
 
-/* No comment provided by engineer. */
+// No comment provided by engineer.
 "**default suite count**: %lld" = "**default suite count**: %lld";
 
-/* No comment provided by engineer. */
+// No comment provided by engineer.
 "**different suite count2**: %lld" = "**different suite count2**: %lld";
 
-/* No comment provided by engineer. */
+// No comment provided by engineer.
 "**Int array**:%@" = "**Int array**:%@";
 
-/* No comment provided by engineer. */
+// No comment provided by engineer.
 "%.2f" = "%.2f";
 
-/* No comment provided by engineer. */
+// No comment provided by engineer.
 "%@" = "%@";
 
-/* No comment provided by engineer. */
+// No comment provided by engineer.
 "%@:" = "%@:";
 
-/* No comment provided by engineer. */
+// No comment provided by engineer.
 "%@: " = "%@: ";
 
-/* No comment provided by engineer. */
+// No comment provided by engineer.
 "%lld" = "%lld";
 
-/* No comment provided by engineer. */
+// No comment provided by engineer.
 "```%@```" = "```%@```";
 
-/* No comment provided by engineer. */
+// No comment provided by engineer.
 "+" = "+";
 
-/* No comment provided by engineer. */
+// No comment provided by engineer.
 "➡️" = "➡️";
 
-/* No comment provided by engineer. */
+// No comment provided by engineer.
 "⬅️" = "⬅️";
 
-/* No comment provided by engineer. */
+// No comment provided by engineer.
 "⬆️" = "⬆️";
 
-/* No comment provided by engineer. */
+// No comment provided by engineer.
 "⬇️" = "⬇️";
 
-/* No comment provided by engineer. */
+// No comment provided by engineer.
 "1" = "1";
 
-/* No comment provided by engineer. */
+// No comment provided by engineer.
 "2" = "2";
 
-/* No comment provided by engineer. */
+// No comment provided by engineer.
 "3" = "3";
 
-/* No comment provided by engineer. */
+// No comment provided by engineer.
 "4" = "4";
 
-/* No comment provided by engineer. */
+// No comment provided by engineer.
 "5" = "5";
 
-/* No comment provided by engineer. */
+// No comment provided by engineer.
 "6" = "6";
 
-/* No comment provided by engineer. */
+// No comment provided by engineer.
 "1234 body" = "1234 body";
 
-/* No comment provided by engineer. */
+// No comment provided by engineer.
 "1234 callout" = "1234 callout";
 
-/* No comment provided by engineer. */
+// No comment provided by engineer.
 "1234 caption" = "1234 caption";
 
-/* No comment provided by engineer. */
+// No comment provided by engineer.
 "1234 caption2" = "1234 caption2";
 
-/* No comment provided by engineer. */
+// No comment provided by engineer.
 "1234 footnote" = "1234 footnote";
 
-/* No comment provided by engineer. */
+// No comment provided by engineer.
 "1234 headline" = "1234 headline";
 
-/* No comment provided by engineer. */
+// No comment provided by engineer.
 "1234 largeTitle" = "1234 largeTitle";
 
-/* No comment provided by engineer. */
+// No comment provided by engineer.
 "1234 subheadline" = "1234 subheadline";
 
-/* No comment provided by engineer. */
+// No comment provided by engineer.
 "1234 title" = "1234 title";
 
-/* No comment provided by engineer. */
+// No comment provided by engineer.
 "1234 title2" = "1234 title2";
 
-/* No comment provided by engineer. */
+// No comment provided by engineer.
 "1234 title3" = "1234 title3";
 
-/* No comment provided by engineer. */
+// No comment provided by engineer.
 "11111monospacedDigit" = "11111monospacedDigit";
 
-/* No comment provided by engineer. */
+// No comment provided by engineer.
 "11111notMonospacedDigit" = "11111notMonospacedDigit";
 
-/* No comment provided by engineer. */
+// No comment provided by engineer.
 "23456monospacedDigit" = "23456monospacedDigit";
 
-/* No comment provided by engineer. */
+// No comment provided by engineer.
 "23456notMonospacedDigit" = "23456notMonospacedDigit";
 
-/* No comment provided by engineer. */
+// No comment provided by engineer.
 "a" = "a";
 
-/* No comment provided by engineer. */
+// No comment provided by engineer.
 "Actions Menu" = "Actions Menu";
 
-/* No comment provided by engineer. */
+// No comment provided by engineer.
 "Adjust SwiftUI Divider Thickness and Color" = "Adjust SwiftUI Divider Thickness and Color";
 
-/* No comment provided by engineer. */
+// No comment provided by engineer.
 "alignment:" = "alignment:";
 
-/* No comment provided by engineer. */
+// No comment provided by engineer.
 "Animatable" = "Animatable";
 
-/* No comment provided by engineer. */
+// No comment provided by engineer.
 "Animation Color Changes" = "Animation Color Changes";
 
-/* No comment provided by engineer. */
+// No comment provided by engineer.
 "Animations" = "Animations";
 
-/* No comment provided by engineer. */
+// No comment provided by engineer.
 "AppStorage" = "AppStorage";
 
-/* No comment provided by engineer. */
+// No comment provided by engineer.
 "automatic" = "automatic";
 
-/* No comment provided by engineer. */
+// No comment provided by engineer.
 "b" = "b";
 
-/* No comment provided by engineer. */
+// No comment provided by engineer.
 "B" = "B";
 
-/* No comment provided by engineer. */
+// No comment provided by engineer.
 "Back and forth flip" = "Back and forth flip";
 
-/* No comment provided by engineer. */
+// No comment provided by engineer.
 "bold and strikethrough" = "bold and strikethrough";
 
-/* No comment provided by engineer. */
+// No comment provided by engineer.
 "bordered" = "bordered";
 
-/* No comment provided by engineer. */
+// No comment provided by engineer.
 "borderedProminent" = "borderedProminent";
 
-/* No comment provided by engineer. */
+// No comment provided by engineer.
 "borderless" = "borderless";
 
-/* No comment provided by engineer. */
+// No comment provided by engineer.
 "Button" = "Button";
 
-/* No comment provided by engineer. */
+// No comment provided by engineer.
 "Button Role" = "Button Role";
 
-/* No comment provided by engineer. */
+// No comment provided by engineer.
 "Button Style" = "Button Style";
 
-/* No comment provided by engineer. */
+// No comment provided by engineer.
 "Button1" = "Button1";
 
-/* No comment provided by engineer. */
+// No comment provided by engineer.
 "Button2" = "Button2";
 
-/* No comment provided by engineer. */
+// No comment provided by engineer.
 "buttonBorderShape" = "buttonBorderShape";
 
-/* No comment provided by engineer. */
+// No comment provided by engineer.
 "c" = "c";
 
-/* No comment provided by engineer. */
+// No comment provided by engineer.
 "Cancel Role" = "Cancel Role";
 
-/* No comment provided by engineer. */
+// No comment provided by engineer.
 "capsule" = "capsule";
 
-/* No comment provided by engineer. */
+// No comment provided by engineer.
 "Collection containers" = "Collection containers";
 
-/* No comment provided by engineer. */
+// No comment provided by engineer.
 "Combining text views" = "Combining text views";
 
-/* No comment provided by engineer. */
+// No comment provided by engineer.
 "Controls and indicators" = "Controls and indicators";
 
-/* No comment provided by engineer. */
+// No comment provided by engineer.
 "Copied" = "Copied";
 
-/* No comment provided by engineer. */
+// No comment provided by engineer.
 "Create a Menu" = "Create a Menu";
 
-/* No comment provided by engineer. */
+// No comment provided by engineer.
 "Create a Menu with primary action" = "Create a Menu with primary action";
 
-/* No comment provided by engineer. */
+// No comment provided by engineer.
 "Creating a collection" = "Creating a collection";
 
-/* No comment provided by engineer. */
+// No comment provided by engineer.
 "Creating a Text View from a string" = "Creating a Text View from a string";
 
-/* No comment provided by engineer. */
+// No comment provided by engineer.
 "Creating a text view with Date formatting" = "Creating a text view with Date formatting";
 
-/* No comment provided by engineer. */
+// No comment provided by engineer.
 "Creating an image" = "Creating an image";
 
-/* No comment provided by engineer. */
+// No comment provided by engineer.
 "Creating form a date" = "Creating form a date";
 
-/* No comment provided by engineer. */
+// No comment provided by engineer.
 "Creating from string" = "Creating from string";
 
-/* No comment provided by engineer. */
+// No comment provided by engineer.
 "Custom ButtonStyle" = "Custom ButtonStyle";
 
-/* No comment provided by engineer. */
+// No comment provided by engineer.
 "Custom LabelStyle" = "Custom LabelStyle";
 
-/* No comment provided by engineer. */
+// No comment provided by engineer.
 "Data Conforming to Identifiable" = "Data Conforming to Identifiable";
 
-/* No comment provided by engineer. */
+// No comment provided by engineer.
 "Data Not Conforming to Identifiable" = "Data Not Conforming to Identifiable";
 
-/* No comment provided by engineer. */
+// No comment provided by engineer.
 "Delete Role" = "Delete Role";
 
-/* No comment provided by engineer. */
+// No comment provided by engineer.
 "different label" = "different label";
 
-/* No comment provided by engineer. */
+// No comment provided by engineer.
 "Divider" = "Divider";
 
-/* No comment provided by engineer. */
+// No comment provided by engineer.
 "Dynamic Scale Text" = "Dynamic Scale Text";
 
-/* No comment provided by engineer. */
+// No comment provided by engineer.
 "End" = "End";
 
-/* No comment provided by engineer. */
+// No comment provided by engineer.
 "Enter⏹" = "Enter⏹";
 
-/* No comment provided by engineer. */
+// No comment provided by engineer.
 "Favorites" = "Favorites";
 
-/* No comment provided by engineer. */
+// No comment provided by engineer.
 "Font Style list" = "Font Style list";
 
-/* No comment provided by engineer. */
+// No comment provided by engineer.
 "ForEach" = "ForEach";
 
-/* No comment provided by engineer. */
+// No comment provided by engineer.
 "ForEach Identifiable" = "ForEach Identifiable";
 
-/* No comment provided by engineer. */
+// No comment provided by engineer.
 "from a range" = "from a range";
 
-/* No comment provided by engineer. */
+// No comment provided by engineer.
 "from data" = "from data";
 
-/* No comment provided by engineer. */
+// No comment provided by engineer.
 "Horizontal divider" = "Horizontal divider";
 
-/* No comment provided by engineer. */
+// No comment provided by engineer.
 "Image" = "Image";
 
-/* No comment provided by engineer. */
+// No comment provided by engineer.
 "image label" = "image label";
 
-/* No comment provided by engineer. */
+// No comment provided by engineer.
 "Image Modifier" = "Image Modifier";
 
-/* No comment provided by engineer. */
+// No comment provided by engineer.
 "Images" = "Images";
 
-/* No comment provided by engineer. */
+// No comment provided by engineer.
 "Input :%@" = "Input :%@";
 
-/* No comment provided by engineer. */
+// No comment provided by engineer.
 "Input and event modifiers" = "Input and event modifiers";
 
-/* No comment provided by engineer. */
+// No comment provided by engineer.
 "interactionModes:" = "interactionModes:";
 
-/* No comment provided by engineer. */
+// No comment provided by engineer.
 "italic and underline" = "italic and underline";
 
-/* No comment provided by engineer. */
+// No comment provided by engineer.
 "Keyboard shortcuts" = "Keyboard shortcuts";
 
-/* No comment provided by engineer. */
+// No comment provided by engineer.
 "Label" = "Label";
 
-/* No comment provided by engineer. */
+// No comment provided by engineer.
 "Layout containers" = "Layout containers";
 
-/* No comment provided by engineer. */
+// No comment provided by engineer.
 "Link" = "Link";
 
-/* No comment provided by engineer. */
+// No comment provided by engineer.
 "Map" = "Map";
 
-/* No comment provided by engineer. */
+// No comment provided by engineer.
 "Map interactionModes" = "Map interactionModes";
 
-/* No comment provided by engineer. */
+// No comment provided by engineer.
 "Menu" = "Menu";
 
-/* No comment provided by engineer. */
+// No comment provided by engineer.
 "Move Game" = "Move Game";
 
-/* No comment provided by engineer. */
+// No comment provided by engineer.
 "Multiline Text Alignment" = "Multiline Text Alignment";
 
-/* No comment provided by engineer. */
+// No comment provided by engineer.
 "MyLabelStyle" = "MyLabelStyle";
 
-/* No comment provided by engineer. */
+// No comment provided by engineer.
 "Neumorphic Button" = "Neumorphic Button";
 
-/* No comment provided by engineer. */
+// No comment provided by engineer.
 "Neumorphism Button" = "Neumorphism Button";
 
-/* No comment provided by engineer. */
+// No comment provided by engineer.
 "One" = "One";
 
-/* No comment provided by engineer. */
+// No comment provided by engineer.
 "one hour to now: " = "one hour to now: ";
 
-/* No comment provided by engineer. */
+// No comment provided by engineer.
 "Progress loop Animation" = "Progress loop Animation";
 
-/* No comment provided by engineer. */
+// No comment provided by engineer.
 "Random" = "Random";
 
-/* No comment provided by engineer. */
+// No comment provided by engineer.
 "Rectangular Shapes" = "Rectangular Shapes";
 
-/* No comment provided by engineer. */
+// No comment provided by engineer.
 "Reset" = "Reset";
 
-/* No comment provided by engineer. */
+// No comment provided by engineer.
 "Roll with two colors" = "Roll with two colors";
 
-/* No comment provided by engineer. */
+// No comment provided by engineer.
 "roundedRectangle" = "roundedRectangle";
 
-/* No comment provided by engineer. */
+// No comment provided by engineer.
 "roundedRectangle(radius)" = "roundedRectangle(radius)";
 
-/* No comment provided by engineer. */
+// No comment provided by engineer.
 "Select 1" = "Select 1";
 
-/* No comment provided by engineer. */
+// No comment provided by engineer.
 "Select 2" = "Select 2";
 
-/* No comment provided by engineer. */
+// No comment provided by engineer.
 "Select Menu" = "Select Menu";
 
-/* No comment provided by engineer. */
+// No comment provided by engineer.
 "Selected: %@" = "Selected: %@";
 
-/* No comment provided by engineer. */
+// No comment provided by engineer.
 "Shapes" = "Shapes";
 
-/* No comment provided by engineer. */
+// No comment provided by engineer.
 "Simple Map View" = "Simple Map View";
 
-/* No comment provided by engineer. */
+// No comment provided by engineer.
 "Space🔄" = "Space🔄";
 
-/* No comment provided by engineer. */
+// No comment provided by engineer.
 "Start Animation" = "Start Animation";
 
-/* No comment provided by engineer. */
+// No comment provided by engineer.
 "State and data flow" = "State and data flow";
 
-/* No comment provided by engineer. */
+// No comment provided by engineer.
 "Storing a objects array" = "Storing a objects array";
 
-/* No comment provided by engineer. */
+// No comment provided by engineer.
 "Storing a value" = "Storing a value";
 
-/* No comment provided by engineer. */
+// No comment provided by engineer.
 "Storing an array" = "Storing an array";
 
-/* No comment provided by engineer. */
+// No comment provided by engineer.
 "Sub Menu Button" = "Sub Menu Button";
 
-/* No comment provided by engineer. */
+// No comment provided by engineer.
 "SubMenu" = "SubMenu";
 
-/* No comment provided by engineer. */
+// No comment provided by engineer.
 "SwiftUI" = "SwiftUI";
 
-/* No comment provided by engineer. */
+// No comment provided by engineer.
 "SwiftUI font list" = "SwiftUI font list";
 
-/* No comment provided by engineer. */
+// No comment provided by engineer.
 "system font" = "system font";
 
-/* No comment provided by engineer. */
+// No comment provided by engineer.
 "systemImage label" = "systemImage label";
 
-/* No comment provided by engineer. */
+// No comment provided by engineer.
 "Tap" = "Tap";
 
-/* No comment provided by engineer. */
+// No comment provided by engineer.
 "Text" = "Text";
 
-/* No comment provided by engineer. */
+// No comment provided by engineer.
 "Text and Label Button" = "Text and Label Button";
 
-/* No comment provided by engineer. */
+// No comment provided by engineer.
 "Text input and output" = "Text input and output";
 
-/* No comment provided by engineer. */
+// No comment provided by engineer.
 "This is a multiline Text alighnment on center test.This is a multiline Text alighnment on center test." = "This is a multiline Text alighnment on center test.This is a multiline Text alighnment on center test.";
 
-/* No comment provided by engineer. */
+// No comment provided by engineer.
 "This is a multiline Text alighnment on leading test.This is a multiline Text alighnment on leading test." = "This is a multiline Text alighnment on leading test.This is a multiline Text alighnment on leading test.";
 
-/* No comment provided by engineer. */
+// No comment provided by engineer.
 "username:%@%lld" = "username:%@%lld";
 
-/* No comment provided by engineer. */
+// No comment provided by engineer.
 "Vertical divider" = "Vertical divider";
 
-/* No comment provided by engineer. */
+// No comment provided by engineer.
 "VStack" = "VStack";
 
-/* No comment provided by engineer. */
+// No comment provided by engineer.
 "We can **creating a Text View** from a Markdown string.\nWe can make *italic*, **blod**, ***blod italic***, ~~striked through~~, `monospaced test` and [Link](https://www.rfc-editor.org/rfc/rfc7763)\n\n```\nWe can **make** a *fenced* code blocks.\n```" = "We can **creating a Text View** from a Markdown string.\nWe can make *italic*, **blod**, ***blod italic***, ~~striked through~~, `monospaced test` and [Link](https://www.rfc-editor.org/rfc/rfc7763)\n\n```\nWe can **make** a *fenced* code blocks.\n```";
 
-/* No comment provided by engineer. */
+// No comment provided by engineer.
 "withAnimation" = "withAnimation";
 
-/* No comment provided by engineer. */
+// No comment provided by engineer.
 "yesterday to tomorrow: " = "yesterday to tomorrow: ";
 
-/* No comment provided by engineer. */
+// No comment provided by engineer.
 "You taped: %@" = "You taped: %@";
 
-/* No comment provided by engineer. */
+// No comment provided by engineer.
 "Your system font list" = "Your system font list";
 
-/* No comment provided by engineer. */
+// No comment provided by engineer.
 "ZStack" = "ZStack";
-
+"A type that describes how to animate a property of a view." = "A type that describes how to animate a property of a view.";
