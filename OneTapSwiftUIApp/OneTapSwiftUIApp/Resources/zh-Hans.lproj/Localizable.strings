@@ -186,7 +186,7 @@
 "Collection containers" = "Collection containers";
 
 // No comment provided by engineer.
-"Combining text views" = "Combining text views";
+"Combining text views" = "合并文本视图";
 
 // No comment provided by engineer.
 "Controls and indicators" = "Controls and indicators";
@@ -207,16 +207,16 @@
 "Creating a Text View from a string" = "Creating a Text View from a string";
 
 // No comment provided by engineer.
-"Creating a text view with Date formatting" = "Creating a text view with Date formatting";
+"Creating a text view with Date formatting" = "创建具有日期格式化的文本";
 
 // No comment provided by engineer.
 "Creating an image" = "创建一个图像";
 
 // No comment provided by engineer.
-"Creating form a date" = "Creating form a date";
+"Creating form a date" = "创建日期的形式";
 
 // No comment provided by engineer.
-"Creating from string" = "Creating from string";
+"Creating from string" = "从字符串创建";
 
 // No comment provided by engineer.
 "Custom ButtonStyle" = "自定义ButtonStyle";
@@ -240,7 +240,7 @@
 "Divider" = "Divider";
 
 // No comment provided by engineer.
-"Dynamic Scale Text" = "Dynamic Scale Text";
+"Dynamic Scale Text" = "动态比例文本";
 
 // No comment provided by engineer.
 "End" = "End";
@@ -252,7 +252,7 @@
 "Favorites" = "Favorites";
 
 // No comment provided by engineer.
-"Font Style list" = "Font Style list";
+"Font Style list" = "字体样式列表";
 
 // No comment provided by engineer.
 "ForEach" = "ForEach";
@@ -318,7 +318,7 @@
 "Move Game" = "移动游戏";
 
 // No comment provided by engineer.
-"Multiline Text Alignment" = "Multiline Text Alignment";
+"Multiline Text Alignment" = "多行文本对齐";
 
 // No comment provided by engineer.
 "MyLabelStyle" = "MyLabelStyle";
@@ -402,7 +402,7 @@
 "SwiftUI" = "SwiftUI";
 
 // No comment provided by engineer.
-"SwiftUI font list" = "SwiftUI font list";
+"SwiftUI font list" = "SwiftUI字体列表";
 
 // No comment provided by engineer.
 "system font" = "system font";
@@ -450,7 +450,7 @@
 "You taped: %@" = "You taped: %@";
 
 // No comment provided by engineer.
-"Your system font list" = "Your system font list";
+"Your system font list" = "您的系统字体列表";
 
 // No comment provided by engineer.
 "ZStack" = "ZStack";
@@ -478,3 +478,4 @@
 "A property wrapper type that reflects a value from UserDefaults and invalidates a view on a change in value in that user default." = "一个反映UserDefaults值的属性封装类型，并在该用户默认值发生变化时使视图失效。";
 "A standard label for user interface items, consisting of an icon with a title." = "用户界面项目的一个标准标签，由一个带有标题的图标组成。";
 "Create a Label" = "创建一个标签";
+"A view that displays one or more lines of read-only text." = "一个显示一行或多行只读文本的视图。";

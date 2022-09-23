@@ -478,3 +478,4 @@
 "A property wrapper type that reflects a value from UserDefaults and invalidates a view on a change in value in that user default." = "A property wrapper type that reflects a value from UserDefaults and invalidates a view on a change in value in that user default.";
 "A standard label for user interface items, consisting of an icon with a title." = "A standard label for user interface items, consisting of an icon with a title.";
 "Create a Label" = "Create a Label";
+"A view that displays one or more lines of read-only text." = "A view that displays one or more lines of read-only text.";
