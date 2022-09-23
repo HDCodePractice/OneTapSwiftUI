@@ -201,7 +201,7 @@
 "Create a Menu with primary action" = "Create a Menu with primary action";
 
 // No comment provided by engineer.
-"Creating a collection" = "Creating a collection";
+"Creating a collection" = "创建一个集合";
 
 // No comment provided by engineer.
 "Creating a Text View from a string" = "Creating a Text View from a string";
@@ -457,3 +457,4 @@
 "A type that describes how to animate a property of a view." = "一个描述如何对View的一个属性进行动画的类型。";
 "Returns the result of recomputing the view’s body with the provided animation." = "返回用提供的动画重新计算视图主体的结果。";
 "Call withAnimation function" = "调用withAnimation函数";
+"A structure that computes views on demand from an underlying collection of identified data." = "一种结构，根据需求从确定的数据的基础集合中计算出视图。";
