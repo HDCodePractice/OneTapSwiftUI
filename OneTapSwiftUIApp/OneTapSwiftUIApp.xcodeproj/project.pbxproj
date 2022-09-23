@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6710658728DDD1BA0059D27A /* OneTapSwiftUIApp-InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6710658928DDD1BA0059D27A /* OneTapSwiftUIApp-InfoPlist.strings */; };
+		6710658D28DDD24E0059D27A /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6710658F28DDD24E0059D27A /* Localizable.strings */; };
 		674CA9F828DB73C90058DF03 /* SwiftUITapsPackage in Frameworks */ = {isa = PBXBuildFile; productRef = 674CA9F728DB73C90058DF03 /* SwiftUITapsPackage */; };
 		676D435128DB5B940038E8A9 /* OneTapSwiftUIAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 676D435028DB5B940038E8A9 /* OneTapSwiftUIAppApp.swift */; };
 		676D435328DB5B940038E8A9 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 676D435228DB5B940038E8A9 /* ContentView.swift */; };
@@ -15,6 +17,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		6710658828DDD1BA0059D27A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = "en.lproj/OneTapSwiftUIApp-InfoPlist.strings"; sourceTree = "<group>"; };
+		6710658A28DDD1C00059D27A /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/OneTapSwiftUIApp-InfoPlist.strings"; sourceTree = "<group>"; };
+		6710658E28DDD24E0059D27A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		6710659028DDD2530059D27A /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
 		674CA9F628DB73A60058DF03 /* SwiftUITapsPackage */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = SwiftUITapsPackage; path = ../../SwiftUITapsPackage; sourceTree = "<group>"; };
 		676D434D28DB5B940038E8A9 /* OneTapSwiftUIApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OneTapSwiftUIApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		676D435028DB5B940038E8A9 /* OneTapSwiftUIAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OneTapSwiftUIAppApp.swift; sourceTree = "<group>"; };
@@ -35,6 +41,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6710658428DDD1A00059D27A /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				6710658F28DDD24E0059D27A /* Localizable.strings */,
+				6710658928DDD1BA0059D27A /* OneTapSwiftUIApp-InfoPlist.strings */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
 		674CA9F128DB70D30058DF03 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -71,6 +86,7 @@
 		676D434F28DB5B940038E8A9 /* OneTapSwiftUIApp */ = {
 			isa = PBXGroup;
 			children = (
+				6710658428DDD1A00059D27A /* Resources */,
 				676D435028DB5B940038E8A9 /* OneTapSwiftUIAppApp.swift */,
 				676D435228DB5B940038E8A9 /* ContentView.swift */,
 				676D435428DB5B940038E8A9 /* Assets.xcassets */,
@@ -149,6 +165,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6710658728DDD1BA0059D27A /* OneTapSwiftUIApp-InfoPlist.strings in Resources */,
+				6710658D28DDD24E0059D27A /* Localizable.strings in Resources */,
 				676D435828DB5B940038E8A9 /* Preview Assets.xcassets in Resources */,
 				676D435528DB5B940038E8A9 /* Assets.xcassets in Resources */,
 			);
@@ -167,6 +185,27 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		6710658928DDD1BA0059D27A /* OneTapSwiftUIApp-InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6710658828DDD1BA0059D27A /* en */,
+				6710658A28DDD1C00059D27A /* zh-Hans */,
+			);
+			name = "OneTapSwiftUIApp-InfoPlist.strings";
+			sourceTree = "<group>";
+		};
+		6710658F28DDD24E0059D27A /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6710658E28DDD24E0059D27A /* en */,
+				6710659028DDD2530059D27A /* zh-Hans */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		676D435928DB5B940038E8A9 /* Debug */ = {
