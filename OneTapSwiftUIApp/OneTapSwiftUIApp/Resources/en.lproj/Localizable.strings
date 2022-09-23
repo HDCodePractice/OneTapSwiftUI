@@ -455,3 +455,5 @@
 // No comment provided by engineer.
 "ZStack" = "ZStack";
 "A type that describes how to animate a property of a view." = "A type that describes how to animate a property of a view.";
+"Returns the result of recomputing the view’s body with the provided animation." = "Returns the result of recomputing the view’s body with the provided animation.";
+"Call withAnimation function" = "Call withAnimation function";

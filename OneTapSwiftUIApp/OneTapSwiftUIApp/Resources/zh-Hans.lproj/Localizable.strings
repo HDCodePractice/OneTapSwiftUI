@@ -336,7 +336,7 @@
 "one hour to now: " = "one hour to now: ";
 
 // No comment provided by engineer.
-"Progress loop Animation" = "Progress loop Animation";
+"Progress loop Animation" = "进度循环动画";
 
 // No comment provided by engineer.
 "Random" = "Random";
@@ -455,3 +455,5 @@
 // No comment provided by engineer.
 "ZStack" = "ZStack";
 "A type that describes how to animate a property of a view." = "一个描述如何对View的一个属性进行动画的类型。";
+"Returns the result of recomputing the view’s body with the provided animation." = "返回用提供的动画重新计算视图主体的结果。";
+"Call withAnimation function" = "调用withAnimation函数";
