@@ -372,7 +372,7 @@
 "Shapes" = "Shapes";
 
 // No comment provided by engineer.
-"Simple Map View" = "Simple Map View";
+"Create a Map" = "Create a Map";
 
 // No comment provided by engineer.
 "Space🔄" = "Space🔄";
@@ -470,3 +470,4 @@
 "A view that overlays its subviews, aligning them in both axes." = "A view that overlays its subviews, aligning them in both axes.";
 "Use ZStack build a dice" = "Use ZStack build a dice";
 "Create a ZStack" = "Create a ZStack";
+"A view that displays an embedded map interface." = "A view that displays an embedded map interface.";

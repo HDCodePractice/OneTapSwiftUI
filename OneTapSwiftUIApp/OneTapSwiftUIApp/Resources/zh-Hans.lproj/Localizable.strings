@@ -309,7 +309,7 @@
 "Map" = "Map";
 
 // No comment provided by engineer.
-"Map interactionModes" = "Map interactionModes";
+"Map interactionModes" = "地图互动模式";
 
 // No comment provided by engineer.
 "Menu" = "Menu";
@@ -372,7 +372,7 @@
 "Shapes" = "Shapes";
 
 // No comment provided by engineer.
-"Simple Map View" = "Simple Map View";
+"Create a Map" = "创建一个地图";
 
 // No comment provided by engineer.
 "Space🔄" = "Space🔄";
@@ -470,3 +470,4 @@
 "A view that overlays its subviews, aligning them in both axes." = "一个覆盖其子视图的视图，使其在两个轴上对齐。";
 "Use ZStack build a dice" = "使用ZStack建立一个骰子";
 "Create a ZStack" = "创建一个ZStack";
+"A view that displays an embedded map interface." = "一个显示嵌入式地图界面的视图。";
