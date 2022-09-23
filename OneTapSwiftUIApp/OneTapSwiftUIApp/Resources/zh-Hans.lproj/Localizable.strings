@@ -471,3 +471,7 @@
 "Use ZStack build a dice" = "使用ZStack建立一个骰子";
 "Create a ZStack" = "创建一个ZStack";
 "A view that displays an embedded map interface." = "一个显示嵌入式地图界面的视图。";
+"A rectangular shape aligned inside the frame of the view containing it." = "一个矩形形状，在包含它的视图的框架内对齐。";
+"A rectangular shape with rounded corners, aligned inside the frame of the view containing it." = "一个有圆角的矩形形状，在包含它的视图的框架内对齐。";
+"Create a RoundedRectangle" = "创建一个圆角矩形";
+"Create a Rectangle" = "创建一个矩形";

@@ -471,3 +471,7 @@
 "Use ZStack build a dice" = "Use ZStack build a dice";
 "Create a ZStack" = "Create a ZStack";
 "A view that displays an embedded map interface." = "A view that displays an embedded map interface.";
+"A rectangular shape aligned inside the frame of the view containing it." = "A rectangular shape aligned inside the frame of the view containing it.";
+"A rectangular shape with rounded corners, aligned inside the frame of the view containing it." = "A rectangular shape with rounded corners, aligned inside the frame of the view containing it.";
+"Create a RoundedRectangle" = "Create a RoundedRectangle";
+"Create a Rectangle" = "Create a Rectangle";
