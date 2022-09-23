@@ -464,3 +464,6 @@
 "Assigns a keyboard shortcut to the modified control." = "Assigns a keyboard shortcut to the modified control.";
 "Create keyboardShortcut" = "Create keyboardShortcut";
 "A visual element that can be used to separate other content." = "A visual element that can be used to separate other content.";
+"Create Divider" = "Create Divider";
+"A view that arranges its subviews in a vertical line." = "A view that arranges its subviews in a vertical line.";
+"Create VStack" = "Create VStack";

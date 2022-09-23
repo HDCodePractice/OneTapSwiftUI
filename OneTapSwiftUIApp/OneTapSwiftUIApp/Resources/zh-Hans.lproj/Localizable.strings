@@ -460,8 +460,10 @@
 "A structure that computes views on demand from an underlying collection of identified data." = "一种结构，根据需求从确定的数据的基础集合中计算出视图。";
 "A control that initiates an action." = "一个发起一个行动的控件";
 "A control for presenting a menu of actions." = "一个用于呈现行动菜单的控件。";
-"A view that displays an image." = "一个显示图像的View";
+"A view that displays an image." = "一个显示图像的视图。";
 "Assigns a keyboard shortcut to the modified control." = "为修饰的控件指定一个键盘快捷方式。";
 "Create keyboardShortcut" = "创建keyboardShortcut";
 "A visual element that can be used to separate other content." = "一个可用于分隔其他内容的视觉元素。";
 "Create Divider" = "创建一个分隔";
+"A view that arranges its subviews in a vertical line." = "一个将其子视图排列成垂直线的视图。";
+"Create VStack" = "创建VStack";
