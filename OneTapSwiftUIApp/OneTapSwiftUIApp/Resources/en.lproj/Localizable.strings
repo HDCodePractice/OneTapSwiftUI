@@ -467,3 +467,6 @@
 "Create Divider" = "Create Divider";
 "A view that arranges its subviews in a vertical line." = "A view that arranges its subviews in a vertical line.";
 "Create VStack" = "Create VStack";
+"A view that overlays its subviews, aligning them in both axes." = "A view that overlays its subviews, aligning them in both axes.";
+"Use ZStack build a dice" = "Use ZStack build a dice";
+"Create a ZStack" = "Create a ZStack";

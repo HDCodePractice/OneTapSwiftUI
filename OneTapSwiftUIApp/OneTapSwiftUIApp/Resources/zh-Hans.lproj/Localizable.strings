@@ -467,3 +467,6 @@
 "Create Divider" = "创建一个分隔";
 "A view that arranges its subviews in a vertical line." = "一个将其子视图排列成垂直线的视图。";
 "Create VStack" = "创建VStack";
+"A view that overlays its subviews, aligning them in both axes." = "一个覆盖其子视图的视图，使其在两个轴上对齐。";
+"Use ZStack build a dice" = "使用ZStack建立一个骰子";
+"Create a ZStack" = "创建一个ZStack";
