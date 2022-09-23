@@ -463,3 +463,5 @@
 "A view that displays an image." = "一个显示图像的View";
 "Assigns a keyboard shortcut to the modified control." = "为修饰的控件指定一个键盘快捷方式。";
 "Create keyboardShortcut" = "创建keyboardShortcut";
+"A visual element that can be used to separate other content." = "一个可用于分隔其他内容的视觉元素。";
+"Create Divider" = "创建一个分隔";
