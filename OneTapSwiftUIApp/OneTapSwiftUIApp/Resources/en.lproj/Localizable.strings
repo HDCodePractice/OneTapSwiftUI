@@ -475,3 +475,4 @@
 "A rectangular shape with rounded corners, aligned inside the frame of the view containing it." = "A rectangular shape with rounded corners, aligned inside the frame of the view containing it.";
 "Create a RoundedRectangle" = "Create a RoundedRectangle";
 "Create a Rectangle" = "Create a Rectangle";
+"A property wrapper type that reflects a value from UserDefaults and invalidates a view on a change in value in that user default." = "A property wrapper type that reflects a value from UserDefaults and invalidates a view on a change in value in that user default.";

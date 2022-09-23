@@ -384,13 +384,13 @@
 "State and data flow" = "State and data flow";
 
 // No comment provided by engineer.
-"Storing a objects array" = "Storing a objects array";
+"Storing a objects array" = "存储一个对象数组";
 
 // No comment provided by engineer.
-"Storing a value" = "Storing a value";
+"Storing a value" = "存储一个变量";
 
 // No comment provided by engineer.
-"Storing an array" = "Storing an array";
+"Storing an array" = "存储一个数组";
 
 // No comment provided by engineer.
 "Sub Menu Button" = "Sub Menu Button";
@@ -475,3 +475,4 @@
 "A rectangular shape with rounded corners, aligned inside the frame of the view containing it." = "一个有圆角的矩形形状，在包含它的视图的框架内对齐。";
 "Create a RoundedRectangle" = "创建一个圆角矩形";
 "Create a Rectangle" = "创建一个矩形";
+"A property wrapper type that reflects a value from UserDefaults and invalidates a view on a change in value in that user default." = "一个反映UserDefaults值的属性封装类型，并在该用户默认值发生变化时使视图失效。";
