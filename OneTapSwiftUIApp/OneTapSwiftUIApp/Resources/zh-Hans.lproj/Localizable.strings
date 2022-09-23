@@ -219,10 +219,10 @@
 "Creating from string" = "Creating from string";
 
 // No comment provided by engineer.
-"Custom ButtonStyle" = "自定义 ButtonStyle";
+"Custom ButtonStyle" = "自定义ButtonStyle";
 
 // No comment provided by engineer.
-"Custom LabelStyle" = "Custom LabelStyle";
+"Custom LabelStyle" = "自定义LabelStyle";
 
 // No comment provided by engineer.
 "Data Conforming to Identifiable" = "Data Conforming to Identifiable";
@@ -476,3 +476,5 @@
 "Create a RoundedRectangle" = "创建一个圆角矩形";
 "Create a Rectangle" = "创建一个矩形";
 "A property wrapper type that reflects a value from UserDefaults and invalidates a view on a change in value in that user default." = "一个反映UserDefaults值的属性封装类型，并在该用户默认值发生变化时使视图失效。";
+"A standard label for user interface items, consisting of an icon with a title." = "用户界面项目的一个标准标签，由一个带有标题的图标组成。";
+"Create a Label" = "创建一个标签";
