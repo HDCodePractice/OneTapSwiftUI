@@ -186,7 +186,7 @@
 "Collection containers" = "Collection containers";
 
 // No comment provided by engineer.
-"Combining text views" = "Combining text views";
+"Combining text views" = "合并文本视图";
 
 // No comment provided by engineer.
 "Controls and indicators" = "Controls and indicators";
@@ -207,22 +207,22 @@
 "Creating a Text View from a string" = "Creating a Text View from a string";
 
 // No comment provided by engineer.
-"Creating a text view with Date formatting" = "Creating a text view with Date formatting";
+"Creating a text view with Date formatting" = "创建具有日期格式化的文本";
 
 // No comment provided by engineer.
 "Creating an image" = "创建一个图像";
 
 // No comment provided by engineer.
-"Creating form a date" = "Creating form a date";
+"Creating form a date" = "创建日期的形式";
 
 // No comment provided by engineer.
-"Creating from string" = "Creating from string";
+"Creating from string" = "从字符串创建";
 
 // No comment provided by engineer.
-"Custom ButtonStyle" = "自定义 ButtonStyle";
+"Custom ButtonStyle" = "自定义ButtonStyle";
 
 // No comment provided by engineer.
-"Custom LabelStyle" = "Custom LabelStyle";
+"Custom LabelStyle" = "自定义LabelStyle";
 
 // No comment provided by engineer.
 "Data Conforming to Identifiable" = "Data Conforming to Identifiable";
@@ -240,7 +240,7 @@
 "Divider" = "Divider";
 
 // No comment provided by engineer.
-"Dynamic Scale Text" = "Dynamic Scale Text";
+"Dynamic Scale Text" = "动态比例文本";
 
 // No comment provided by engineer.
 "End" = "End";
@@ -252,7 +252,7 @@
 "Favorites" = "Favorites";
 
 // No comment provided by engineer.
-"Font Style list" = "Font Style list";
+"Font Style list" = "字体样式列表";
 
 // No comment provided by engineer.
 "ForEach" = "ForEach";
@@ -309,7 +309,7 @@
 "Map" = "Map";
 
 // No comment provided by engineer.
-"Map interactionModes" = "Map interactionModes";
+"Map interactionModes" = "地图互动模式";
 
 // No comment provided by engineer.
 "Menu" = "Menu";
@@ -318,7 +318,7 @@
 "Move Game" = "移动游戏";
 
 // No comment provided by engineer.
-"Multiline Text Alignment" = "Multiline Text Alignment";
+"Multiline Text Alignment" = "多行文本对齐";
 
 // No comment provided by engineer.
 "MyLabelStyle" = "MyLabelStyle";
@@ -372,7 +372,7 @@
 "Shapes" = "Shapes";
 
 // No comment provided by engineer.
-"Simple Map View" = "Simple Map View";
+"Create a Map" = "创建一个地图";
 
 // No comment provided by engineer.
 "Space🔄" = "Space🔄";
@@ -384,13 +384,13 @@
 "State and data flow" = "State and data flow";
 
 // No comment provided by engineer.
-"Storing a objects array" = "Storing a objects array";
+"Storing a objects array" = "存储一个对象数组";
 
 // No comment provided by engineer.
-"Storing a value" = "Storing a value";
+"Storing a value" = "存储一个变量";
 
 // No comment provided by engineer.
-"Storing an array" = "Storing an array";
+"Storing an array" = "存储一个数组";
 
 // No comment provided by engineer.
 "Sub Menu Button" = "Sub Menu Button";
@@ -402,7 +402,7 @@
 "SwiftUI" = "SwiftUI";
 
 // No comment provided by engineer.
-"SwiftUI font list" = "SwiftUI font list";
+"SwiftUI font list" = "SwiftUI字体列表";
 
 // No comment provided by engineer.
 "system font" = "system font";
@@ -450,7 +450,7 @@
 "You taped: %@" = "You taped: %@";
 
 // No comment provided by engineer.
-"Your system font list" = "Your system font list";
+"Your system font list" = "您的系统字体列表";
 
 // No comment provided by engineer.
 "ZStack" = "ZStack";
@@ -460,6 +460,22 @@
 "A structure that computes views on demand from an underlying collection of identified data." = "一种结构，根据需求从确定的数据的基础集合中计算出视图。";
 "A control that initiates an action." = "一个发起一个行动的控件";
 "A control for presenting a menu of actions." = "一个用于呈现行动菜单的控件。";
-"A view that displays an image." = "一个显示图像的View";
+"A view that displays an image." = "一个显示图像的视图。";
 "Assigns a keyboard shortcut to the modified control." = "为修饰的控件指定一个键盘快捷方式。";
 "Create keyboardShortcut" = "创建keyboardShortcut";
+"A visual element that can be used to separate other content." = "一个可用于分隔其他内容的视觉元素。";
+"Create Divider" = "创建一个分隔";
+"A view that arranges its subviews in a vertical line." = "一个将其子视图排列成垂直线的视图。";
+"Create VStack" = "创建VStack";
+"A view that overlays its subviews, aligning them in both axes." = "一个覆盖其子视图的视图，使其在两个轴上对齐。";
+"Use ZStack build a dice" = "使用ZStack建立一个骰子";
+"Create a ZStack" = "创建一个ZStack";
+"A view that displays an embedded map interface." = "一个显示嵌入式地图界面的视图。";
+"A rectangular shape aligned inside the frame of the view containing it." = "一个矩形形状，在包含它的视图的框架内对齐。";
+"A rectangular shape with rounded corners, aligned inside the frame of the view containing it." = "一个有圆角的矩形形状，在包含它的视图的框架内对齐。";
+"Create a RoundedRectangle" = "创建一个圆角矩形";
+"Create a Rectangle" = "创建一个矩形";
+"A property wrapper type that reflects a value from UserDefaults and invalidates a view on a change in value in that user default." = "一个反映UserDefaults值的属性封装类型，并在该用户默认值发生变化时使视图失效。";
+"A standard label for user interface items, consisting of an icon with a title." = "用户界面项目的一个标准标签，由一个带有标题的图标组成。";
+"Create a Label" = "创建一个标签";
+"A view that displays one or more lines of read-only text." = "一个显示一行或多行只读文本的视图。";

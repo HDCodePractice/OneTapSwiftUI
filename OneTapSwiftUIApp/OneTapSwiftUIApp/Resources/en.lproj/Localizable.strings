@@ -372,7 +372,7 @@
 "Shapes" = "Shapes";
 
 // No comment provided by engineer.
-"Simple Map View" = "Simple Map View";
+"Create a Map" = "Create a Map";
 
 // No comment provided by engineer.
 "Space🔄" = "Space🔄";
@@ -463,3 +463,19 @@
 "A view that displays an image." = "A view that displays an image.";
 "Assigns a keyboard shortcut to the modified control." = "Assigns a keyboard shortcut to the modified control.";
 "Create keyboardShortcut" = "Create keyboardShortcut";
+"A visual element that can be used to separate other content." = "A visual element that can be used to separate other content.";
+"Create Divider" = "Create Divider";
+"A view that arranges its subviews in a vertical line." = "A view that arranges its subviews in a vertical line.";
+"Create VStack" = "Create VStack";
+"A view that overlays its subviews, aligning them in both axes." = "A view that overlays its subviews, aligning them in both axes.";
+"Use ZStack build a dice" = "Use ZStack build a dice";
+"Create a ZStack" = "Create a ZStack";
+"A view that displays an embedded map interface." = "A view that displays an embedded map interface.";
+"A rectangular shape aligned inside the frame of the view containing it." = "A rectangular shape aligned inside the frame of the view containing it.";
+"A rectangular shape with rounded corners, aligned inside the frame of the view containing it." = "A rectangular shape with rounded corners, aligned inside the frame of the view containing it.";
+"Create a RoundedRectangle" = "Create a RoundedRectangle";
+"Create a Rectangle" = "Create a Rectangle";
+"A property wrapper type that reflects a value from UserDefaults and invalidates a view on a change in value in that user default." = "A property wrapper type that reflects a value from UserDefaults and invalidates a view on a change in value in that user default.";
+"A standard label for user interface items, consisting of an icon with a title." = "A standard label for user interface items, consisting of an icon with a title.";
+"Create a Label" = "Create a Label";
+"A view that displays one or more lines of read-only text." = "A view that displays one or more lines of read-only text.";
