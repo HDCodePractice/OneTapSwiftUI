@@ -219,7 +219,7 @@
 "Creating from string" = "Creating from string";
 
 // No comment provided by engineer.
-"Custom ButtonStyle" = "Custom ButtonStyle";
+"Custom ButtonStyle" = "自定义 ButtonStyle";
 
 // No comment provided by engineer.
 "Custom LabelStyle" = "Custom LabelStyle";
@@ -417,7 +417,7 @@
 "Text" = "Text";
 
 // No comment provided by engineer.
-"Text and Label Button" = "Text and Label Button";
+"Text and Label Button" = "文本和标签按钮";
 
 // No comment provided by engineer.
 "Text input and output" = "Text input and output";
@@ -458,3 +458,4 @@
 "Returns the result of recomputing the view’s body with the provided animation." = "返回用提供的动画重新计算视图主体的结果。";
 "Call withAnimation function" = "调用withAnimation函数";
 "A structure that computes views on demand from an underlying collection of identified data." = "一种结构，根据需求从确定的数据的基础集合中计算出视图。";
+"A control that initiates an action." = "一个发起一个行动的控件";

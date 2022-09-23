@@ -458,3 +458,4 @@
 "Returns the result of recomputing the view’s body with the provided animation." = "Returns the result of recomputing the view’s body with the provided animation.";
 "Call withAnimation function" = "Call withAnimation function";
 "A structure that computes views on demand from an underlying collection of identified data." = "A structure that computes views on demand from an underlying collection of identified data.";
+"A control that initiates an action." = "A control that initiates an action.";
