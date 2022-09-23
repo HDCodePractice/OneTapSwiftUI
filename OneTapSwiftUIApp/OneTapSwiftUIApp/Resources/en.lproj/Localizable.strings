@@ -461,3 +461,5 @@
 "A control that initiates an action." = "A control that initiates an action.";
 "A control for presenting a menu of actions." = "A control for presenting a menu of actions.";
 "A view that displays an image." = "A view that displays an image.";
+"Assigns a keyboard shortcut to the modified control." = "Assigns a keyboard shortcut to the modified control.";
+"Create keyboardShortcut" = "Create keyboardShortcut";

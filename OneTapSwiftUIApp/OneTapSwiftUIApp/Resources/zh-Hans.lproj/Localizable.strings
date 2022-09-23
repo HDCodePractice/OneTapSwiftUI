@@ -315,7 +315,7 @@
 "Menu" = "Menu";
 
 // No comment provided by engineer.
-"Move Game" = "Move Game";
+"Move Game" = "移动游戏";
 
 // No comment provided by engineer.
 "Multiline Text Alignment" = "Multiline Text Alignment";
@@ -461,3 +461,5 @@
 "A control that initiates an action." = "一个发起一个行动的控件";
 "A control for presenting a menu of actions." = "一个用于呈现行动菜单的控件。";
 "A view that displays an image." = "一个显示图像的View";
+"Assigns a keyboard shortcut to the modified control." = "为修饰的控件指定一个键盘快捷方式。";
+"Create keyboardShortcut" = "创建keyboardShortcut";
