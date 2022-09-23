@@ -459,3 +459,4 @@
 "Call withAnimation function" = "Call withAnimation function";
 "A structure that computes views on demand from an underlying collection of identified data." = "A structure that computes views on demand from an underlying collection of identified data.";
 "A control that initiates an action." = "A control that initiates an action.";
+"A control for presenting a menu of actions." = "A control for presenting a menu of actions.";

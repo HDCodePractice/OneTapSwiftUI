@@ -195,10 +195,10 @@
 "Copied" = "Copied";
 
 // No comment provided by engineer.
-"Create a Menu" = "Create a Menu";
+"Create a Menu" = "创建一个菜单";
 
 // No comment provided by engineer.
-"Create a Menu with primary action" = "Create a Menu with primary action";
+"Create a Menu with primary action" = "创建一个具有主要行动的菜单";
 
 // No comment provided by engineer.
 "Creating a collection" = "创建一个集合";
@@ -459,3 +459,4 @@
 "Call withAnimation function" = "调用withAnimation函数";
 "A structure that computes views on demand from an underlying collection of identified data." = "一种结构，根据需求从确定的数据的基础集合中计算出视图。";
 "A control that initiates an action." = "一个发起一个行动的控件";
+"A control for presenting a menu of actions." = "一个用于呈现行动菜单的控件。";
