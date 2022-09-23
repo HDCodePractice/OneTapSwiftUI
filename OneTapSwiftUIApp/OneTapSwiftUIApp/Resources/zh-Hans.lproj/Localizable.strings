@@ -210,7 +210,7 @@
 "Creating a text view with Date formatting" = "Creating a text view with Date formatting";
 
 // No comment provided by engineer.
-"Creating an image" = "Creating an image";
+"Creating an image" = "创建一个图像";
 
 // No comment provided by engineer.
 "Creating form a date" = "Creating form a date";
@@ -460,3 +460,4 @@
 "A structure that computes views on demand from an underlying collection of identified data." = "一种结构，根据需求从确定的数据的基础集合中计算出视图。";
 "A control that initiates an action." = "一个发起一个行动的控件";
 "A control for presenting a menu of actions." = "一个用于呈现行动菜单的控件。";
+"A view that displays an image." = "一个显示图像的View";
