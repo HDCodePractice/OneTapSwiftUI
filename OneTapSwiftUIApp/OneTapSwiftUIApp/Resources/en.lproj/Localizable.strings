@@ -485,3 +485,5 @@
 "Create a Circle" = "Create a Circle";
 "A capsule shape aligned inside the frame of the view containing it." = "A capsule shape aligned inside the frame of the view containing it.";
 "Create a Capsule" = "Create a Capsule";
+"The outline of a 2D shape." = "The outline of a 2D shape.";
+"Create a triangle shape" = "Create a triangle shape";

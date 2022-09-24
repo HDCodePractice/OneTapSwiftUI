@@ -485,3 +485,5 @@
 "Create a Circle" = "创建一个圆圈";
 "A capsule shape aligned inside the frame of the view containing it." = "一个胶囊形状在包含它的视图的框架内对齐。";
 "Create a Capsule" = "创建一个胶囊";
+"The outline of a 2D shape." = "一个2D形状的轮廓。";
+"Create a triangle shape" = "创建一个三角形的形状";
