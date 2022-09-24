@@ -479,3 +479,9 @@
 "A standard label for user interface items, consisting of an icon with a title." = "用户界面项目的一个标准标签，由一个带有标题的图标组成。";
 "Create a Label" = "创建一个标签";
 "A view that displays one or more lines of read-only text." = "一个显示一行或多行只读文本的视图。";
+"A circle centered on the frame of the view containing it." = "一个以包含它的视图框架为中心的圆。";
+"An ellipse aligned inside the frame of the view containing it." = "一个在包含它的视图的框架内对齐的椭圆。";
+"Create a Ellipse" = "创建一个椭圆";
+"Create a Circle" = "创建一个圆圈";
+"A capsule shape aligned inside the frame of the view containing it." = "一个胶囊形状在包含它的视图的框架内对齐。";
+"Create a Capsule" = "创建一个胶囊";

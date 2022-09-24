@@ -479,3 +479,9 @@
 "A standard label for user interface items, consisting of an icon with a title." = "A standard label for user interface items, consisting of an icon with a title.";
 "Create a Label" = "Create a Label";
 "A view that displays one or more lines of read-only text." = "A view that displays one or more lines of read-only text.";
+"A circle centered on the frame of the view containing it." = "A circle centered on the frame of the view containing it.";
+"An ellipse aligned inside the frame of the view containing it." = "An ellipse aligned inside the frame of the view containing it.";
+"Create a Ellipse" = "Create a Ellipse";
+"Create a Circle" = "Create a Circle";
+"A capsule shape aligned inside the frame of the view containing it." = "A capsule shape aligned inside the frame of the view containing it.";
+"Create a Capsule" = "Create a Capsule";
