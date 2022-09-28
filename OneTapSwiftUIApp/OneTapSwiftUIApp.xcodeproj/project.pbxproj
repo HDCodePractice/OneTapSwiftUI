@@ -22,6 +22,7 @@
 		6710658E28DDD24E0059D27A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		6710659028DDD2530059D27A /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
 		674CA9F628DB73A60058DF03 /* SwiftUITapsPackage */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = SwiftUITapsPackage; path = ../../SwiftUITapsPackage; sourceTree = "<group>"; };
+		676BD21E28E46B900009B2D8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		676D434D28DB5B940038E8A9 /* OneTapSwiftUIApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OneTapSwiftUIApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		676D435028DB5B940038E8A9 /* OneTapSwiftUIAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OneTapSwiftUIAppApp.swift; sourceTree = "<group>"; };
 		676D435228DB5B940038E8A9 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -86,6 +87,7 @@
 		676D434F28DB5B940038E8A9 /* OneTapSwiftUIApp */ = {
 			isa = PBXGroup;
 			children = (
+				676BD21E28E46B900009B2D8 /* Info.plist */,
 				6710658428DDD1A00059D27A /* Resources */,
 				676D435028DB5B940038E8A9 /* OneTapSwiftUIAppApp.swift */,
 				676D435228DB5B940038E8A9 /* ContentView.swift */,
@@ -333,6 +335,7 @@
 				DEVELOPMENT_TEAM = T4W3MN6QHA;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = OneTapSwiftUIApp/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = "One Tap SwiftUI";
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.developer-tools";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -365,6 +368,7 @@
 				DEVELOPMENT_TEAM = T4W3MN6QHA;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = OneTapSwiftUIApp/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = "One Tap SwiftUI";
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.developer-tools";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
