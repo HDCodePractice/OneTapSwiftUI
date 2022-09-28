@@ -489,3 +489,4 @@
 "Create a triangle shape" = "创建一个三角形的形状";
 "A view that displays content from a player and a native user interface to control playback." = "一个显示播放器内容的视图，以及一个控制播放的本地用户接口。";
 "Create a VideoPlayer" = "创建一个视频播放器";
+"An object that plays audio data from a file or buffer." = "一个从文件或缓冲区播放音频数据的对象。";
