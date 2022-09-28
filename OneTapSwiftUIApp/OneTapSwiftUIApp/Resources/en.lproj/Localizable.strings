@@ -489,3 +489,4 @@
 "Create a triangle shape" = "Create a triangle shape";
 "A view that displays content from a player and a native user interface to control playback." = "A view that displays content from a player and a native user interface to control playback.";
 "Create a VideoPlayer" = "Create a VideoPlayer";
+"An object that plays audio data from a file or buffer." = "An object that plays audio data from a file or buffer.";
