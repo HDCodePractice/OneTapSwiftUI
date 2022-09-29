@@ -219,10 +219,10 @@
 "Creating from string" = "从字符串创建";
 
 // No comment provided by engineer.
-"Custom ButtonStyle" = "自定义ButtonStyle";
+"Custom ButtonStyle" = "自定义 ButtonStyle";
 
 // No comment provided by engineer.
-"Custom LabelStyle" = "自定义LabelStyle";
+"Custom LabelStyle" = "自定义 LabelStyle";
 
 // No comment provided by engineer.
 "Data Conforming to Identifiable" = "Data Conforming to Identifiable";
@@ -456,20 +456,20 @@
 "ZStack" = "ZStack";
 "A type that describes how to animate a property of a view." = "一个描述如何对View的一个属性进行动画的类型。";
 "Returns the result of recomputing the view’s body with the provided animation." = "返回用提供的动画重新计算视图主体的结果。";
-"Call withAnimation function" = "调用withAnimation函数";
+"Call withAnimation function" = "调用 withAnimation 函数";
 "A structure that computes views on demand from an underlying collection of identified data." = "一种结构，根据需求从确定的数据的基础集合中计算出视图。";
 "A control that initiates an action." = "一个发起一个行动的控件";
 "A control for presenting a menu of actions." = "一个用于呈现行动菜单的控件。";
 "A view that displays an image." = "一个显示图像的视图。";
 "Assigns a keyboard shortcut to the modified control." = "为修饰的控件指定一个键盘快捷方式。";
-"Create keyboardShortcut" = "创建keyboardShortcut";
+"Create keyboardShortcut" = "创建 keyboardShortcut";
 "A visual element that can be used to separate other content." = "一个可用于分隔其他内容的视觉元素。";
 "Create Divider" = "创建一个分隔";
 "A view that arranges its subviews in a vertical line." = "一个将其子视图排列成垂直线的视图。";
-"Create VStack" = "创建VStack";
+"Create VStack" = "创建 VStack";
 "A view that overlays its subviews, aligning them in both axes." = "一个覆盖其子视图的视图，使其在两个轴上对齐。";
 "Use ZStack build a dice" = "使用ZStack建立一个骰子";
-"Create a ZStack" = "创建一个ZStack";
+"Create a ZStack" = "创建一个 ZStack";
 "A view that displays an embedded map interface." = "一个显示嵌入式地图界面的视图。";
 "A rectangular shape aligned inside the frame of the view containing it." = "一个矩形形状，在包含它的视图的框架内对齐。";
 "A rectangular shape with rounded corners, aligned inside the frame of the view containing it." = "一个有圆角的矩形形状，在包含它的视图的框架内对齐。";
@@ -490,3 +490,5 @@
 "A view that displays content from a player and a native user interface to control playback." = "一个显示播放器内容的视图，以及一个控制播放的本地用户接口。";
 "Create a VideoPlayer" = "创建一个视频播放器";
 "An object that plays audio data from a file or buffer." = "一个从文件或缓冲区播放音频数据的对象。";
+"An object that provides the interface to control the player’s transport behavior." = "一个对象用来提供界面来控制播放器的传输行为。";
+"Create a AVPlayer" = "创建一个 AVPlayer";
