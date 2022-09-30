@@ -492,3 +492,6 @@
 "An object that plays audio data from a file or buffer." = "An object that plays audio data from a file or buffer.";
 "An object that provides the interface to control the player’s transport behavior." = "An object that provides the interface to control the player’s transport behavior.";
 "Create a AVPlayer" = "Create a AVPlayer";
+"A view type that supports immediate mode drawing." = "A view type that supports immediate mode drawing.";
+"Create a Canvas with child views" = "Create a Canvas with child views";
+"Create a Canvas" = "Create a Canvas";

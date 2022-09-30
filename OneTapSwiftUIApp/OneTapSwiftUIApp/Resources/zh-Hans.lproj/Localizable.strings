@@ -492,3 +492,6 @@
 "An object that plays audio data from a file or buffer." = "一个从文件或缓冲区播放音频数据的对象。";
 "An object that provides the interface to control the player’s transport behavior." = "一个对象用来提供界面来控制播放器的传输行为。";
 "Create a AVPlayer" = "创建一个 AVPlayer";
+"A view type that supports immediate mode drawing." = "一个支持即时模式绘图的视图类型。";
+"Create a Canvas with child views" = "创建一个带有子视图的画布";
+"Create a Canvas" = "创建一个画布";
