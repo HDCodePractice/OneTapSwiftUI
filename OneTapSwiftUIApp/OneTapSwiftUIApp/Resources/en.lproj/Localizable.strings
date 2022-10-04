@@ -495,3 +495,6 @@
 "A view type that supports immediate mode drawing." = "A view type that supports immediate mode drawing.";
 "Create a Canvas with child views" = "Create a Canvas with child views";
 "Create a Canvas" = "Create a Canvas";
+"A view that represents a UIKit view controller." = "A view that represents a UIKit view controller.";
+"A wrapper for a UIKit view that you use to integrate that view into your SwiftUI view hierarchy." = "A wrapper for a UIKit view that you use to integrate that view into your SwiftUI view hierarchy.";
+"Create a MapView using corrdinator" = "Create a MapView using corrdinator";

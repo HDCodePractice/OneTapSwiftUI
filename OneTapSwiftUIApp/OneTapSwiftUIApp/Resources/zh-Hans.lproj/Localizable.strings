@@ -495,3 +495,6 @@
 "A view type that supports immediate mode drawing." = "一个支持即时模式绘图的视图类型。";
 "Create a Canvas with child views" = "创建一个带有子视图的画布";
 "Create a Canvas" = "创建一个画布";
+"A view that represents a UIKit view controller." = "一个代表UIKit视图控制器的视图。";
+"A wrapper for a UIKit view that you use to integrate that view into your SwiftUI view hierarchy." = "一个UIKit视图的包装器，用于将该视图集成到SwiftUI的视图层次中。";
+"Create a MapView using corrdinator" = "使用corrdinator创建一个MapView";
