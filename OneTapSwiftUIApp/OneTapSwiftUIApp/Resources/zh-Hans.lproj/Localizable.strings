@@ -498,3 +498,5 @@
 "A view that represents a UIKit view controller." = "一个代表UIKit视图控制器的视图。";
 "A wrapper for a UIKit view that you use to integrate that view into your SwiftUI view hierarchy." = "一个UIKit视图的包装器，用于将该视图集成到SwiftUI的视图层次中。";
 "Create a MapView using corrdinator" = "使用corrdinator创建一个MapView";
+"Show Gestures" = "显示手势";
+"General" = "通用";
