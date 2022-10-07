@@ -498,3 +498,8 @@
 "A view that represents a UIKit view controller." = "一个代表UIKit视图控制器的视图。";
 "A wrapper for a UIKit view that you use to integrate that view into your SwiftUI view hierarchy." = "一个UIKit视图的包装器，用于将该视图集成到SwiftUI的视图层次中。";
 "Create a MapView using corrdinator" = "使用corrdinator创建一个MapView";
+"Show Gestures" = "显示手势";
+"General" = "通用";
+"An embeddable map interface, similar to the one that the Maps app provides." = "一个可嵌入的地图界面，类似于地图应用提供的界面。";
+"Create overlays to highlight geographic regions or paths." = "创建覆盖层以突出地理区域或路径。";
+"Create a MapKit overlays" = "创建一个MapKit覆盖层";

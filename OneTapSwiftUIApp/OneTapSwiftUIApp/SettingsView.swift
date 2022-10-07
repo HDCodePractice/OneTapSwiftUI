@@ -13,7 +13,7 @@ struct SettingsView: View {
 
     var body: some View {
         List {
-            Section("Demo Settings") {
+            Section("General") {
                 Toggle("Show Gestures", isOn: $isShowGestures)
                     .onChange(of: isShowGestures) { newValue in
                         if newValue {
