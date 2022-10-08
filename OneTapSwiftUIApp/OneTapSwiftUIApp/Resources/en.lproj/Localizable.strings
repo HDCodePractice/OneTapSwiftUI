@@ -503,3 +503,5 @@
 "An embeddable map interface, similar to the one that the Maps app provides." = "An embeddable map interface, similar to the one that the Maps app provides.";
 "Create overlays to highlight geographic regions or paths." = "Create overlays to highlight geographic regions or paths.";
 "Create a MapKit overlays" = "Create a MapKit overlays";
+"A control for selecting a value from a bounded linear range of values." = "A control for selecting a value from a bounded linear range of values.";
+"Create a Slider" = "Create a Slider";

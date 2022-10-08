@@ -503,3 +503,5 @@
 "An embeddable map interface, similar to the one that the Maps app provides." = "一个可嵌入的地图界面，类似于地图应用提供的界面。";
 "Create overlays to highlight geographic regions or paths." = "创建覆盖层以突出地理区域或路径。";
 "Create a MapKit overlays" = "创建一个MapKit覆盖层";
+"A control for selecting a value from a bounded linear range of values." = "用于从一个有界的线性范围内选择一个值的控件。";
+"Create a Slider" = "创建一个滑块";
