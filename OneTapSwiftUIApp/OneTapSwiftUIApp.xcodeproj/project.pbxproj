@@ -10,9 +10,9 @@
 		6710658728DDD1BA0059D27A /* OneTapSwiftUIApp-InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6710658928DDD1BA0059D27A /* OneTapSwiftUIApp-InfoPlist.strings */; };
 		6710658D28DDD24E0059D27A /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6710658F28DDD24E0059D27A /* Localizable.strings */; };
 		674CA9F828DB73C90058DF03 /* SwiftUITapsPackage in Frameworks */ = {isa = PBXBuildFile; productRef = 674CA9F728DB73C90058DF03 /* SwiftUITapsPackage */; };
+		675E655328F0EB1900756ACE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 675E655228F0EB1900756ACE /* Assets.xcassets */; };
 		676D435128DB5B940038E8A9 /* OneTapSwiftUIAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 676D435028DB5B940038E8A9 /* OneTapSwiftUIAppApp.swift */; };
 		676D435328DB5B940038E8A9 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 676D435228DB5B940038E8A9 /* ContentView.swift */; };
-		676D435528DB5B940038E8A9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 676D435428DB5B940038E8A9 /* Assets.xcassets */; };
 		676D435828DB5B940038E8A9 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 676D435728DB5B940038E8A9 /* Preview Assets.xcassets */; };
 		6798141028EDA96300979254 /* ShowTime in Frameworks */ = {isa = PBXBuildFile; productRef = 6798140F28EDA96300979254 /* ShowTime */; };
 		6798141228EDAD5800979254 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6798141128EDAD5800979254 /* SettingsView.swift */; };
@@ -24,11 +24,11 @@
 		6710658E28DDD24E0059D27A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		6710659028DDD2530059D27A /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
 		674CA9F628DB73A60058DF03 /* SwiftUITapsPackage */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = SwiftUITapsPackage; path = ../../SwiftUITapsPackage; sourceTree = "<group>"; };
+		675E655228F0EB1900756ACE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		676BD21E28E46B900009B2D8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		676D434D28DB5B940038E8A9 /* OneTapSwiftUIApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OneTapSwiftUIApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		676D435028DB5B940038E8A9 /* OneTapSwiftUIAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OneTapSwiftUIAppApp.swift; sourceTree = "<group>"; };
 		676D435228DB5B940038E8A9 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		676D435428DB5B940038E8A9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		676D435728DB5B940038E8A9 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		6798141128EDAD5800979254 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -49,6 +49,7 @@
 		6710658428DDD1A00059D27A /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				675E655228F0EB1900756ACE /* Assets.xcassets */,
 				6710658F28DDD24E0059D27A /* Localizable.strings */,
 				6710658928DDD1BA0059D27A /* OneTapSwiftUIApp-InfoPlist.strings */,
 			);
@@ -95,7 +96,6 @@
 				6710658428DDD1A00059D27A /* Resources */,
 				676D435028DB5B940038E8A9 /* OneTapSwiftUIAppApp.swift */,
 				676D435228DB5B940038E8A9 /* ContentView.swift */,
-				676D435428DB5B940038E8A9 /* Assets.xcassets */,
 				676D435628DB5B940038E8A9 /* Preview Content */,
 				6798141128EDAD5800979254 /* SettingsView.swift */,
 			);
@@ -178,8 +178,8 @@
 			files = (
 				6710658728DDD1BA0059D27A /* OneTapSwiftUIApp-InfoPlist.strings in Resources */,
 				6710658D28DDD24E0059D27A /* Localizable.strings in Resources */,
+				675E655328F0EB1900756ACE /* Assets.xcassets in Resources */,
 				676D435828DB5B940038E8A9 /* Preview Assets.xcassets in Resources */,
-				676D435528DB5B940038E8A9 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
