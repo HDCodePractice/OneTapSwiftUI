@@ -505,3 +505,5 @@
 "Create a MapKit overlays" = "Create a MapKit overlays";
 "A control for selecting a value from a bounded linear range of values." = "A control for selecting a value from a bounded linear range of values.";
 "Create a Slider" = "Create a Slider";
+"Applies the given animation to this view when the specified value changes." = "Applies the given animation to this view when the specified value changes.";
+"Call animation function" = "Call animation function";
