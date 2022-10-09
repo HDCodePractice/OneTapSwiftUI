@@ -505,3 +505,5 @@
 "Create a MapKit overlays" = "创建一个MapKit覆盖层";
 "A control for selecting a value from a bounded linear range of values." = "用于从一个有界的线性范围内选择一个值的控件。";
 "Create a Slider" = "创建一个滑块";
+"Applies the given animation to this view when the specified value changes." = "当指定的值发生变化时，将给定的动画应用到该视图上。";
+"Call animation function" = "调用 animation 函数";
