@@ -507,3 +507,4 @@
 "Create a Slider" = "创建一个滑块";
 "Applies the given animation to this view when the specified value changes." = "当指定的值发生变化时，将给定的动画应用到该视图上。";
 "Call animation function" = "调用 animation 函数";
+"Mix animation and withAnimation" = "混合 animation 和 withAnimation";
