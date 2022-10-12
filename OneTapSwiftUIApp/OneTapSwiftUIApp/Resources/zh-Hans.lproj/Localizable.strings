@@ -508,3 +508,6 @@
 "Applies the given animation to this view when the specified value changes." = "当指定的值发生变化时，将给定的动画应用到该视图上。";
 "Call animation function" = "调用 animation 函数";
 "Mix animation and withAnimation" = "混合 animation 和 withAnimation";
+"Configure voices to speak strings of text." = "配置声音以说出一串串文字。";
+"A dragging motion that invokes an action as the drag-event sequence changes." = "一个拖动动作，随着拖动-事件序列的变化而调用一个动作。";
+"Create a DragGesture" = "创建一个DragGesture";
