@@ -511,3 +511,5 @@
 "Configure voices to speak strings of text." = "Configure voices to speak strings of text.";
 "A dragging motion that invokes an action as the drag-event sequence changes." = "A dragging motion that invokes an action as the drag-event sequence changes.";
 "Create a DragGesture" = "Create a DragGesture";
+"An object that helps a user share data from one place to another within your app, and from your app to other apps." = "An object that helps a user share data from one place to another within your app, and from your app to other apps.";
+"Copy and paste a String" = "Copy and paste a String";
