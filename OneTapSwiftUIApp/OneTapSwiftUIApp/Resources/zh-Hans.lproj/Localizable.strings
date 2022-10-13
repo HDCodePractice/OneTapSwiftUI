@@ -511,3 +511,5 @@
 "Configure voices to speak strings of text." = "配置声音以说出一串串文字。";
 "A dragging motion that invokes an action as the drag-event sequence changes." = "一个拖动动作，随着拖动-事件序列的变化而调用一个动作。";
 "Create a DragGesture" = "创建一个DragGesture";
+"An object that helps a user share data from one place to another within your app, and from your app to other apps." = "一个帮助用户在你的应用程序内从一个地方到另一个地方，以及从你的应用程序到其他应用程序分享数据的对象。";
+"Copy and paste a String" = "复制和粘贴一个字符串";
