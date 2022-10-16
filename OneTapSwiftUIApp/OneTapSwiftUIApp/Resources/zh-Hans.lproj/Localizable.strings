@@ -513,3 +513,7 @@
 "Create a DragGesture" = "创建一个DragGesture";
 "An object that helps a user share data from one place to another within your app, and from your app to other apps." = "一个帮助用户在你的应用程序内从一个地方到另一个地方，以及从你的应用程序到其他应用程序分享数据的对象。";
 "Copy and paste a String" = "复制和粘贴一个字符串";
+"A container that presents rows of data arranged in a single column, optionally providing the ability to select one or more members." = "一个容器，呈现排列在单列的数据行，可选择提供选择一个或多个成员的能力。";
+"Create a multiple selection rows view" = "创建一个多选行视图";
+"Create a selection rows view" = "创建一个选择行视图";
+"Create a rows view" = "创建一个行视图";

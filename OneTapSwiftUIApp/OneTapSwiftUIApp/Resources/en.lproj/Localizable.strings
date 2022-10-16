@@ -513,3 +513,7 @@
 "Create a DragGesture" = "Create a DragGesture";
 "An object that helps a user share data from one place to another within your app, and from your app to other apps." = "An object that helps a user share data from one place to another within your app, and from your app to other apps.";
 "Copy and paste a String" = "Copy and paste a String";
+"A container that presents rows of data arranged in a single column, optionally providing the ability to select one or more members." = "A container that presents rows of data arranged in a single column, optionally providing the ability to select one or more members.";
+"Create a multiple selection rows view" = "Create a multiple selection rows view";
+"Create a selection rows view" = "Create a selection rows view";
+"Create a rows view" = "Create a rows view";
