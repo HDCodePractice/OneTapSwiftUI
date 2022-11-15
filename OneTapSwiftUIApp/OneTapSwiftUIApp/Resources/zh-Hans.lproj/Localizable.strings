@@ -517,3 +517,4 @@
 "Create a multiple selection rows view" = "创建一个多选行视图";
 "Create a selection rows view" = "创建一个选择行视图";
 "Create a rows view" = "创建一个行视图";
+"An object that creates images from SwiftUI views." = "一个从SwiftUI视图创建图像的对象。";
