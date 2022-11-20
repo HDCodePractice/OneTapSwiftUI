@@ -518,3 +518,4 @@
 "Create a selection rows view" = "创建一个选择行视图";
 "Create a rows view" = "创建一个行视图";
 "An object that creates images from SwiftUI views." = "一个从SwiftUI视图创建图像的对象。";
+"Marks this view as searchable, which configures the display of a search field." = "将该视图标记为可搜索，这就配置了搜索字段的显示。";

@@ -518,3 +518,4 @@
 "Create a selection rows view" = "Create a selection rows view";
 "Create a rows view" = "Create a rows view";
 "An object that creates images from SwiftUI views." = "An object that creates images from SwiftUI views.";
+"Marks this view as searchable, which configures the display of a search field." = "Marks this view as searchable, which configures the display of a search field.";
